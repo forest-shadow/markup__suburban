@@ -10,3 +10,147 @@ append config
     - var PageTitle         = PageTitle.concat(' | ' + thisPage)
     
 block content
+    .mainpage-slider__container
+        .site-wrapper
+            .mainpage-slider__special-offer-block
+                span.offer-date
+                h3 Специальное предложение
+                span.offer-desc Скидка 10% на строительство дома из газобетона
+                form#special-offer-form.special-offer-form(action="")
+                    p
+                        label(for="name")
+                        input#name(type="text", name="name")
+                    p
+                        label(for="phone")
+                        input#phone(type="text", name="phone")
+                    input.btn__send-form--white-arrow(type="submit", value="Получить скидку")
+
+        section.mainpage-slider
+            .mainpage-slider__slide(style="background: url('images/mainslider__slide-01.jpg') center cetner no-repeat;")
+                .site-wrapper
+                    .slide-desc
+                        .slide-desc__text Время <big>менять вид</big> <span class="middle">из окна</span>
+                        a.btn__know-more(href="#") Узнать подробнее
+
+            .mainpage-slider__slide(style="background: url('images/mainslider__slide-02.jpg') center cetner no-repeat;")
+                .site-wrapper
+                    .slide-desc
+                        .slide-desc__text Время <big>менять вид</big> <span class="middle">из окна</span>
+                        a.btn__know-more(href="#") Узнать подробнее
+
+            .mainpage-slider__slide(style="background: url('images/mainslider__slide-03.jpg') center cetner no-repeat;")
+                .site-wrapper
+                    .slide-desc
+                        .slide-desc__text Время <big>менять вид</big> <span class="middle">из окна</span>
+                        a.btn__know-more(href="#") Узнать подробнее
+
+            .mainpage-slider__slide(style="background: url('images/mainslider__slide-04.jpg') center cetner no-repeat;")
+                .site-wrapper
+                    .slide-desc
+                        .slide-desc__text Время <big>менять вид</big> <span class="middle">из окна</span>
+                        a.btn__know-more(href="#") Узнать подробнее
+
+            .mainpage-slider__slide(style="background: url('images/mainslider__slide-05.jpg') center cetner no-repeat;")
+                .site-wrapper
+                    .slide-desc
+                        .slide-desc__text Время <big>менять вид</big> <span class="middle">из окна</span>
+                        a.btn__know-more(href="#") Узнать подробнее
+
+    .site-wrapper
+        section.about-us
+            .about-us__header-container
+                h2 Немного о нас
+                .about-us__header-stripe
+
+            .about-us__benefits-list
+                ul
+                    li.benefit-item--guarantee Гарантия качества
+                    li.benefit-item--years-of-seccess 20 лет успешного строительства
+                    li.benefit-item--deadlines Cдача в срок
+                    li.benefit-item--fixed-price Фиксированная цена
+                    li.benefit-item--installment Рассрочка
+
+    section.dreamhouses-form-block(style="background: url( 'images/bg__dreamhouse.jpg' )")
+        h2 Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас!
+        form#dreamhouse-form.dreamhouse-form(action="#")
+            p
+                label(for="name")
+                input#name(type="text", name="name")
+            p
+                label(for="phone")
+                input#phone(type="text", name="phone")
+            input.btn__know-more(type="submit", value="Узнать подробнее")
+
+    section.suburban-building-block
+        .suburban-building-block__suburban-heading
+            h2.suburban-heading__title Строительство <big>загородных</big> <span class="middle">домов</span>
+
+        .suburban-building-block__suburban-desc(style="background: url( 'images/bg__suburban-building.jpg' ) center center no-repeat;")
+            .suburban-desc__text
+                p Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас! Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас! Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас! Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас!Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас! Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас!
+            a.suburban-desc__knew-more-link( href="#" ) Читать подробнее
+
+    .site-wrapper
+        section.projects-carousel-block
+            h2  Дома из газобетона
+
+            .project-carousel
+                +projectsCarouselItems()
+
+            a.btn__know-more(href="#") Все проекты
+
+        section.projects-carousel-block
+            h2  Каркасные дома
+
+            .project-carousel
+                +projectsCarouselItems()
+
+            a.btn__know-more(href="#") Все проекты
+
+    section.preoject-reqest-block(style="background: url('images/bg__request-project.jpg') center center no-repeat;")
+        .site-wrapper
+            h2 На сайте представлены не все проекты домов.
+            h3.form-header Оставьте заявку и мы подберем проект именно для Вашей семьи!
+
+            form#project-request-form.project-request-form(action="")
+                p
+                    label(for="name")
+                    input#name(type="text", name="name")
+                p
+                    label(for="phone")
+                    input#phone(type="text", name="phone")
+                input.btn__know-more(type="submit", value="Узнать подробнее")
+
+    .site-wrapper
+        section.projects-carousel-block
+            h2 Дома из клееного бруса
+
+            .project-carousel
+                +projectsCarouselItems()
+
+            a.btn__know-more(href="#") Все проекты
+
+
+        section.projects-carousel-block
+            h2 Дома из пресованного кирпича
+
+            .project-carousel
+                +projectsCarouselItems()
+
+            a.btn__know-more(href="#") Все проекты
+
+    section.calculation-block(style="background: url(' images/bg__calculation.jpg ') center center no-repeat;")
+        .calculation-block__calculation-heading
+            h2.calculation-heading__title От калькуляции <span class="middle">лишь головная</span> <big>боль?</big>
+            .calculation-heading__subtitle Воспользуйтесь удобным Калькулятором для расчета строительства дома!
+        .calculation-block__calculation-desc
+            .calculation-desc__header-container
+                h3 Калькулятор строительства дома
+                .calculation-desc--header-stripe
+            .calculation-desc__text
+                p Результаты расчета стоимости строительства являются ориентировочными и не являются публичной офертой. Чтобы получить более точный расчет стоимости строительства свяжитесь с нами через форму обратной связи, по эл. почте или по телефону - 940-31-78.
+                p Не забывайте, действуют акции!
+                p При заказе строительства дома - ПРОЕКТ ДОМА БЕСПЛАТНО! При обращении к нам через форму обратной связи - СКИДКА НА СТРОИТЕЛЬСТВО ДОМА ОТ 5% ДО 10%!
+
+            i.calculator
+            a.btn__know-more(href="#") Рассчитать стоимость

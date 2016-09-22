@@ -1,1 +1,13 @@
 header.site-header
+    .site-wrapper
+        nav.site-header__navigation
+            ul
+                +navListItem( "Главная" )
+                +navListItem( "Строительство" )
+                +navListItem( "Проекты" )
+                +navListItem( "Калькулятор" )
+                +navListItem( "Контакты" )
+
+        .site-header__feedback-call
+            a.btn__rounded-dark-green(href="#") Заказать звонок
+            span.feedback-call__working-schedule Режим работы: с 10.00 до 19.00

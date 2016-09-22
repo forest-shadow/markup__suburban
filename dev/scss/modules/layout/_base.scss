@@ -13,18 +13,11 @@ i {
  * Basic site layout
  *********************************************/
 body {
-    font-size: 14px;
-    font-family: 'Roboto Light', sans-serif;
+    font-size: 16px;
 }
 .site-wrapper {
     @include outer-container-fixed( 1280px );
-    background-color: #f3f6f7;
-
-    & > * {
-        float: left;
-    }
-}
-.content-wrapper {
-    width: 1180px;
-    margin-left: 100px; //-
+    @include padding ( 0 50px );
+    margin: 0 auto;
+    position: relative;
 }
