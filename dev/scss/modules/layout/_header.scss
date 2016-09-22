@@ -3,12 +3,20 @@
  *********************************************/
 .site-header {
     @include padding( 28px null 24px );
+    @include position( fixed, 0 0 null 0);
     width: 100%;
     border-bottom: 4px solid $sub-dark-green;
+    position: fixed;
+    z-index: 100;
+    background: #fff;
 }
 
 .site-header__navigation {
     float: left;
+
+    ul {
+        @include clearfix();
+    }
     
     li {
         float: left;
@@ -25,6 +33,7 @@
         text-decoration: none;
         padding-bottom: 6px;
         position: relative;
+        line-height: 72px;
 
         &::after {
             @include position ( absolute, 100% null null 0 );

@@ -17,3 +17,41 @@
     background: darken( $sub-dark-green, 10% );
   }
 }
+
+.btn__know-more {
+    @include padding( 18px 15px );
+    color: #fff;
+    font-family: 'OpenSans Semibold', sans-serif;
+    background-color: $sub-purple;
+    -webkit-border-radius: 46px;
+    -moz-border-radius: 46px;
+    border-radius: 46px;
+    border: 2px solid #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 18px;
+    
+    &:hover {
+        color: #fff;
+        background-color: darken( $sub-purple, 8% );
+    }
+}
+
+.btn__send-form--white-arrow,
+form input.btn__send-form--white-arrow[type="submit"]{
+    @include background( url('images/icons/form__arrow--white.png') 272px 20px no-repeat, linear-gradient(to right, #b9df52, #6ba942) );
+    @include padding( 26px 72px 26px 62px  );
+    text-align: left;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'OpenSans Semibold', sans-serif;
+    width: 100%;
+
+    &:hover {
+        box-shadow: none;
+        @include background( url('images/icons/form__arrow--white.png') 272px 20px no-repeat,
+                linear-gradient(to right, darken( #b9df52, 10%) , darken( #6ba942, 10%) ) );
+    }
+}
