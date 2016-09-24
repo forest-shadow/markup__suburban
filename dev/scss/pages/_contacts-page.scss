@@ -1,0 +1,59 @@
+/*********************************************
+ * Contacts Page Styles
+ *********************************************/
+.contacts-info-block {
+    float: left;
+    padding-top: 30px;
+    @include size( 50% 458px );
+
+    .contacts-info-block__contacts-header-container {
+        margin-bottom: 95px;
+
+        h1 {
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .contacts-header-container__header-stripe {
+            height: 4px;
+            @include background( linear-gradient(to right, #b9df52, #6ba942) );
+            width: 146px;
+        }
+    }
+}
+
+.contacts-info-block__contacts-info-list {
+    @include outer-container();
+
+    .contacts-info-list__contact-item {
+        @include span-columns( 6 );
+        @include omega();
+        height: 134px;
+
+        span.contact-item__label {
+            display: block;
+            font-size: 12px;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            color: darken( #eff0f4, 30% );
+        }
+
+        span.contact-item__info {
+            font-size: 18px;
+        }
+    }
+}
+
+.contacts-info-map {
+    float: left;
+    width: 50%;
+    height: 458px;
+
+    .ymaps-layers-pane CANVAS {
+        filter: grayscale(100%);
+        filter: gray;
+        -webkit-filter: grayscale(100%) contrast(100%);
+        filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=0.7);
+    }
+}

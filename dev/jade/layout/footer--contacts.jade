@@ -1,0 +1,23 @@
+section.site-footer(style="background: url('images/bg__footer.jpg') center center no-repeat;")
+    .site-wrapper
+        .site-footer__footer-container
+            .site-footer__contact-form-block.site-footer__contact-form-block--contacts-page
+                h3.contact-form-block__title Свяжитесь с нами
+
+                form#footer-contacts-form.footer-contacts-form(action="")
+                    .inputs-row
+                        p
+                            input#name(type="text", name="name", placeholder="Ваше имя")
+                        p
+                            input#phone(type="text", name="phone", placeholder="Ваш телефон")
+                    p
+                        input#email(type="text", name="email", placeholder="Email")
+                    p
+                        textarea#message(type="text", name="message", placeholder="Сообщение")
+                    input.btn__send-form--green-arrow(type="submit", value="Отправить")
+section.copyrights
+    .site-wrapper
+        span © «Загородное домостроительство», 2016 Все права защищены
+    
+    
+script(src='./all.js', type='text/javascript')    

@@ -107,6 +107,12 @@ section.site-footer {
     }
 }
 
+
+.site-footer__contact-form-block--contacts-page {
+    margin: 0 auto;
+    width: 590px;
+}
+
 section.copyrights {
     background: #67b72e;
     @include padding( 16px null );

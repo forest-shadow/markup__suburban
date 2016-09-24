@@ -21,3 +21,30 @@ body {
     margin: 0 auto;
     position: relative;
 }
+
+/*********************************************
+ * 01. Pagination block Styles
+ *********************************************/
+section.pagination-block {
+    margin-top: 131px;
+    background: #eff0f4;
+    @include padding( 15px null );
+    
+    ul {
+        li {
+            float: left;
+            font-size: 13px;
+
+            &:last-child:after{
+                display: none;
+            }
+
+            &:after {
+                content: '/';
+                @include margin( null 10px );
+                display: inline-block;
+            }
+
+        }
+    }
+}
