@@ -46,6 +46,20 @@ hr {
 ****/
 
 @font-face {
+    font-family: "OpenSans Italic";
+    src: url( "fonts/OpenSansFamily/OpenSans-Italic.ttf" ) format( "truetype" );
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "OpenSans Light";
+    src: url( "fonts/OpenSansFamily/OpenSans-Light.ttf" ) format( "truetype" );
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
     font-family: "OpenSans Regular";
     src: url( "fonts/OpenSansFamily/OpenSans-Regular.ttf" ) format( "truetype" );
     font-style: normal;

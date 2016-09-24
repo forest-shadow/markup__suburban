@@ -9,6 +9,10 @@
     margin-top: 131px;
     position: relative;
 
+    .slick-dotted.slick-slider {
+        margin-bottom: 0!important;
+    }
+
     .mainpage-slider {
         .mainpage-slider__slide {
             @include size( 100% 600px );
@@ -38,6 +42,7 @@
                 font-size: 105px;
             }
         }
+
 
         .slick-dots {
             @include position( absolute, null 0 25px);
@@ -135,5 +140,465 @@
         }
 
     }
+}
 
+/*********************************************
+ * 02. About us section Styles
+ *********************************************/
+.about-us {
+    @include padding( 30px null 40px );
+}
+.about-us__header-container {
+    width: 280px;
+    margin: 0 auto 34px;
+    text-align: center;
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 30px;
+        margin-bottom: 12px;
+        margin-top: 0;
+    }
+
+    .about-us__header-stripe {
+        height: 4px;
+        margin: 0 auto;
+        @include background( linear-gradient(to right, #b9df52, #6ba942) );
+        width: 156px;
+    }
+}
+
+.about-us__benefits-list {
+    width: 970px;
+    margin: 0 auto;
+
+    ul {
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+        width: 160px;
+        margin-right: 38px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 14px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &:before {
+            @include size( 160px );
+            content: '';
+            display: block;
+            margin-bottom: 26px;
+        }
+
+        &.benefit-item--guarantee:before {
+            @include sprite( $s-benefit-guarantee );
+        }
+
+        &.benefit-item--years-of-success:before {
+            @include sprite( $s-benefit-years-of-success );
+        }
+
+        &.benefit-item--deadlines:before {
+            @include sprite( $s-benefit-deadlines );
+        }
+
+        &.benefit-item--fixed-price:before {
+            @include sprite( $s-benefit-fixed-price );
+        }
+
+        &.benefit-item--installment:before {
+            @include sprite( $s-benefit-installment );
+        }
+    }
+}
+
+
+/*********************************************
+ * 03. Dreamhouse form section Styles
+ *********************************************/
+.dreamhouses-form-block {
+    @include size( 100% 500px );
+    padding-top: 48px;
+
+    h2 {
+        font-family: 'OpenSans Light', sans-serif;
+        font-size: 48px;
+        color: #fff;
+        margin-bottom: 16px;
+    }
+}
+.dreamhouses-form-block__form-container {
+    width: 800px;
+
+    form {
+        p {
+            width: 430px;
+        }
+
+        input[type="text"] {
+            background: none;
+            border: none;
+            box-shadow: none;
+            border-bottom: 2px solid $sub-purple;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            padding-left: 86px;
+            color: $sub-purple;
+            text-transform: uppercase;
+            height: 72px;
+
+            @include placeholder {
+                color: $sub-purple;
+            }
+
+            &[name="name"] {
+                background: url('images/icons/form-blocks__name.png') 16px center no-repeat;
+            }
+
+            &[name="phone"] {
+                background: url('images/icons/form-blocks__phone.png') 16px center no-repeat;
+            }
+        }
+
+        .btn__know-more {
+            margin-top: 26px;
+        }
+    }
+}
+
+/*********************************************
+ * 04. Suburban buildings section Styles
+ *********************************************/
+.suburban-building-block {
+    display: flex;
+    @include align-items(stretch);
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+    @include size( 100% 350px );
+
+    .suburban-building-block__suburban-heading {
+        @include padding( 62px 42px null );
+        width: 40%;
+        background: $sub-salad-green;
+
+        h2.suburban-heading__title {
+            border-left: 14px solid #fff;
+            padding-left: 35px;
+            font-family: 'OpenSans Bold', sans-serif;
+            font-size: 36px;
+            color: #fff;
+            text-transform: uppercase;
+
+            big {
+                font-size: 60px;
+                font-family: 'OpenSans ExtraBold', sans-serif;
+            }
+
+            span.middle {
+                font-family: 'OpenSans Bold', sans-serif;
+                font-size: 60px;
+            }
+        }
+    }
+
+    .suburban-building-block__suburban-desc {
+        @include padding( 77px 30px null );
+        -webkit-background-size: cover;
+        background-size: cover!important;
+        width: 60%;
+
+        .suburban-desc__text {
+            color: #fff;
+            border-top: 8px solid #fff;
+            border-bottom: 8px solid #fff;
+            @include padding( 22px null );
+            margin-bottom: 20px;
+
+            p {
+                font-size: 20px;
+                line-height: 26px;
+                font-family: 'OpenSans Light', sans-serif;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .suburban-desc__knew-more-link {
+            text-transform: uppercase;
+            color: #fff;
+            float: right;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+/*********************************************
+ * 05. Projects carousel block Styles
+ *********************************************/
+.projects-carousel-block {
+    @include padding( 60px null 40px );
+    text-align: center;
+
+    .projects-carousel-block__header-container {
+        text-align: center;
+        margin-bottom: 36px;
+    }
+
+    h2 {
+        @include background( linear-gradient(to right, #b9df52, #6ba942) );
+        @include padding ( 4px 20px );
+        text-transform: uppercase;
+        color: #fff;
+        display: inline-block;
+        font-family: 'OpenSans Bold', sans-serif;
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .project-carousel {
+        width: 830px;
+        margin: 0 auto;
+
+        @include slickPurpleArrows();
+    }
+
+    .slick-dots{
+        position: static;
+        margin-top: 30px;
+        li button:before {
+            font-size: 10px;
+        }
+    }
+
+    .btn__know-more {
+        display: inline-block;
+        margin: 40px auto 0;
+        @include padding( null 46px );
+    }
+}
+.project-carousel__project-item {
+    text-align: center;
+    width: 228px;
+    text-decoration: none;
+    @include margin( null 24px null);
+
+    .project-header {
+        font-family: 'OpenSans Italic', sans-serif;
+        font-size: 24px;
+        line-height: 24px;
+        height: 50px;
+        margin-bottom: 10px;
+        display: inline-block;
+    }
+
+    .project-item__project-card {
+        -webkit-border-radius: 26px;
+        -moz-border-radius: 26px;
+        border-radius: 26px;
+        border: 1px solid #ddd;
+        overflow: hidden;
+
+        .project-card__project-thumb {
+            position: relative;
+
+            .project-thumb__onhover-block {
+                display: none;
+                @include position( absolute, 0 null null 0);
+                z-index: 2;
+                @include size( 100% );
+                @include background( url( 'images/icons/carousel-projects__loupe.png' ) center 60px no-repeat,
+                        rgba( $sub-purple, .6 ) );
+
+                span {
+                    padding-top: 156px;
+                    color: #fff;
+                    text-decoration: underline;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    font-family: 'OpenSans Semibold', sans-serif;
+                    display: inline-block;
+                }
+            }
+
+            &:hover {
+                .project-thumb__onhover-block {
+                    display: block;
+                }
+            }
+        }
+
+        .project-deatails {
+            text-align: left;
+            background: #eff0f4;
+            @include padding( 20px 10px );
+
+            .detail-label {
+                font-size: 16px;
+                font-family: 'OpenSans Bold', sans-serif;
+                display: inline-block;
+                margin-right: 10px;
+            }
+
+        }
+    }
+}
+
+/*********************************************
+ * 06. Project request block Styles
+ *********************************************/
+.project-request-block {
+    @include size( 100% 545px );
+    padding-top: 46px;
+
+    h2 {
+        font-family: 'OpenSans Light', sans-serif;
+        font-size: 48px;
+        width: 560px;
+        margin-bottom: 40px;
+        color: #fff;
+    }
+
+    h3.form-header {
+        font-family: 'OpenSans Light', sans-serif;
+        font-size: 24px;
+        width: 500px;
+        margin-bottom: 20px;
+    }
+
+    form {
+
+        .project-request-form__inputs-container {
+            @include clearfix();
+        }
+        p {
+            width: 430px;
+            float: left;
+            margin-right: 30px;
+
+        }
+
+        input[type="text"] {
+            background: none;
+            border: none;
+            box-shadow: none;
+            border-bottom: 2px solid $sub-purple;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            padding-left: 86px;
+            color: $sub-purple;
+            text-transform: uppercase;
+            height: 72px;
+
+            @include placeholder {
+                color: $sub-purple;
+            }
+
+            &[name="name"] {
+                background: url('images/icons/form-blocks__name.png') 16px center no-repeat;
+            }
+
+            &[name="phone"] {
+                background: url('images/icons/form-blocks__phone.png') 16px center no-repeat;
+            }
+        }
+
+        .btn__know-more {
+            margin-top: 26px;
+        }
+    }
+}
+
+/*********************************************
+ * 07. Calculation block Styles
+ *********************************************/
+section.calculation-block {
+    display: flex;
+    @include align-items(stretch);
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+    @include size( 100% 475px );
+
+    .calculation-block__calculation-heading {
+        @include padding( 40px 54px );
+        width: 40%;
+        background: url(' images/bg__calculation.jpg ') center center no-repeat;
+        background-size: cover;
+        color: #fff;
+
+        h2.calculation-heading__title {
+            padding-left: 35px;
+            border-left: 16px solid #fff;
+            font-size: 36px;
+            font-family: 'OpenSans Bold', sans-serif;
+            text-transform: uppercase;
+            margin-bottom: 26px;
+
+            span.middle {
+                font-size: 50px;
+                font-family: 'OpenSans ExtraBold', sans-serif;
+            }
+
+            big {
+                font-size: 72px;
+            }
+        }
+
+        .calculation-heading__subtitle {
+            font-size: 24px;
+            font-family: 'OpenSans Light', sans-serif;
+            margin-left: 48px;
+            width: 322px;
+            line-height: 30px;
+        }
+
+    }
+
+    .calculation-block__calculation-desc {
+        @include padding( 40px 30px );
+        width: 60%;
+        background: #cbcfea;
+
+        .calculation-desc__header-container {
+            margin-bottom: 40px;
+
+            h3 {
+                font-size: 30px;
+                text-transform: uppercase;
+                margin-bottom: 20px;
+            }
+
+            .calculation-desc--header-stripe {
+                height: 4px;
+                @include background( linear-gradient(to right, #b9df52, #6ba942) );
+                width: 156px;
+            }
+        }
+
+        .calculation-desc__text {
+            margin-bottom: 30px;
+        }
+
+        i.calculator {
+            @include sprite( $s-calculator );
+            display: inline-block;
+            margin-right: 20px;
+            vertical-align: top;
+        }
+
+        .btn__know-more {
+            vertical-align: top;
+        }
+    }
 }
