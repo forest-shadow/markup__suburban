@@ -1,6 +1,8 @@
 {
-    "index.html":                   "Разводящая страница",
-    "01_bourbon_template.html":     "Тестовая страница с Bourbon Refills",
-    "02_basic_layout.html":         "Базовая разметка",
-    "03_home-page.html":            "Главная"
+    "index.html": "Разводящая страница",
+    "01_bourbon_template.html": "Тестовая страница с Bourbon Refills",
+    "02_basic_layout.html": "Базовая разметка",
+    "03_home-page.html": "Главная",
+    "04_contacts-page.html": "Контакты",
+    "05_projects--category.html": "Категория проектов"
 }

@@ -1,0 +1,172 @@
+/*********************************************
+ * Projects Category Page Styles
+ *********************************************/
+.projects-category {
+    @include padding( 32px null 70px );
+
+    .projects-category__header-conatainer {
+        text-align: center;
+        margin-bottom: 56px;
+
+        h1 {
+            @include background( linear-gradient(to right, #b9df52, #6ba942) );
+            @include padding ( 4px 20px );
+            text-transform: uppercase;
+            color: #fff;
+            display: inline-block;
+            font-family: 'OpenSans Bold', sans-serif;
+            font-size: 30px;
+            margin-bottom: 0;
+        }
+    }
+
+    .projects-category__filter-container {
+        @include clearfix();
+        margin-bottom: 24px;
+
+        .projects-items-filter {
+            float: right;
+
+            span.label {
+                font-family: 'OpenSans Bold', sans-serif;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 16px;
+            }
+
+            ul {
+                @include clearfix();
+                display: inline-block;
+                vertical-align: top;
+
+                li {
+                    float: left;
+                    margin-right: 10px;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+
+                span {
+                    font-family: 'OpenSans Bold', sans-serif;
+                }
+            }
+        }
+    }
+
+    article.projects-list__project-item {
+        background: #eff0f4;
+        -webkit-border-radius: 22px;
+        -moz-border-radius: 22px;
+        border-radius: 22px;
+        overflow: hidden;
+        margin-bottom: 30px;
+
+        .project-item__project-thumb {
+            float: left;
+            @include size( 469px 298px );
+        }
+    }
+
+    .project-item__project-desc {
+        float: left;
+        @include size( 710px 298px );
+        @include padding( 24px 26px null );
+
+        .project-desc__project-header {
+            margin-bottom: 22px;
+            @include clearfix();
+
+            .project-title {
+                width: 450px;
+                float: left;
+
+                h3 {
+                    font-size: 30px;
+                    text-transform: uppercase;
+                    margin-bottom: 14px;
+                }
+                .project-title__header-stripe {
+                    height: 4px;
+                    @include background( linear-gradient(to right, #b9df52, #6ba942) );
+                    width: 156px;
+                }
+            }
+
+            .project-price {
+                float: right;
+                font-family: 'OpenSans Bold', sans-serif;
+                font-size: 24px;
+                color: $sub-dark-green;
+                text-transform: uppercase;
+            }
+        }
+
+        .project-desc__info-row {
+            margin-bottom: 14px;
+            display: flex;
+            @include flex-flow();
+            @include justify-content( space-between );
+
+            .info-row__info-item {
+                span.info-item__label {
+                    display: inline-block;
+                    font-family: 'OpenSans Bold', sans-serif;
+                    margin-right: 15px;
+                }
+            }
+        }
+
+        .project-desc__text {
+            margin-bottom: 12px;
+        }
+    }
+
+    section.pagination-block {
+        text-align: center;
+        margin-right: 40px;
+
+        span.pods-pagination-paginate {
+            & > * {
+                display: inline-block;
+                width: 32px;
+                text-align: center;
+            }
+
+            a,
+            span {
+                @include margin( null 2px );
+            }
+            
+            span.current,
+            a:hover:not( .prev ):not( .next ) {
+                @include padding( 4px );
+                color: #fff;
+                background: $sub-purple;
+                -webkit-border-radius: 50%;
+                -moz-border-radius: 50%;
+                border-radius: 50%;
+                text-decoration: none;
+            }
+
+            a.prev,
+            a.next {
+                text-decoration: none;
+            }
+
+            a.next:before {
+                content: "→";
+                display: inline-block;
+                font-size: 20px;
+            }
+            a.prev:before {
+                content: "←";
+                display: inline-block;
+                font-size: 20px;
+            }
+        }
+    }
+
+
+}

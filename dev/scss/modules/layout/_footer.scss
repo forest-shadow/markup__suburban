@@ -51,6 +51,7 @@ section.site-footer {
                 padding-left: 48px;
                 box-shadow: none;
                 margin-bottom: 0;
+                color: #fff;
                 
                 @include placeholder {
                     color: #fff;
@@ -60,6 +61,11 @@ section.site-footer {
                     border-color: #fff;
                     box-shadow: none;
                 }
+            }
+
+            textarea {
+                height: 120px;
+                resize: none;
             }
 
             input[name="name"] {

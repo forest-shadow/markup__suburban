@@ -81,3 +81,20 @@ form input.btn__send-form--green-arrow[type="submit"] {
                 lighten( $sub-dark-green, 7%) );
     }
 }
+
+.btn__know-more--green {
+    text-transform: uppercase;
+    background: $sub-dark-green;
+    color: #fff;
+    text-decoration: none;
+    @include padding( 12px 26px );
+    -webkit-border-radius: 36px;
+    -moz-border-radius: 36px;
+    border-radius: 36px;
+    display: inline-block;
+    
+    &:hover {
+        color: #fff;
+        background: darken( $sub-dark-green, 10% );
+    }
+}

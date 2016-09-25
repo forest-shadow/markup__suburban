@@ -1,0 +1,37 @@
+extends layout/site-layout
+include modules/mixins
+
+append config
+    - var PageTitle         = "Страница проекта"
+    - var MetaDesc          = "Meta Description for current page!!!"
+    - var jQuery            = true
+    - var updateBodyClass   = BodyClasses.push( 'extraclass', 'secondclass' )
+    - var thisPage          = "Загородное строительство"
+    - var PageTitle         = PageTitle.concat(' | ' + thisPage)
+
+block content
+    section.breadcrumbs-block
+        .site-wrapper
+            ul
+                +navListItem( "Главная" )
+                +navListItem( "Дома из газобетона" )
+                li
+                    span Проект Инесса
+
+    article.project-info
+        .project-info__header-container
+            h1 Проект Инесса
+            .header-container__header-stripe
+
+        section.project-info__main-info
+            .main-info__project-desc-block
+                .project-desc-block__project-slider
+                    img(src="images/mockups/project-page__thumb.jpeg")
+                    img(src="images/mockups/project-page__thumb.jpeg")
+                    img(src="images/mockups/project-page__thumb.jpeg")
+                    img(src="images/mockups/project-page__thumb.jpeg")
+                .project-desc-block__project-desc
+                    h3.project-desc__desc-label Описание
+                    p Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный.
+            .main-info__project-details
+

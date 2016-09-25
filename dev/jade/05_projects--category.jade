@@ -1,0 +1,109 @@
+extends layout/site-layout
+include modules/mixins
+
+append config
+    - var PageTitle         = "Категория проектов"
+    - var MetaDesc          = "Meta Description for current page!!!"
+    - var jQuery            = true
+    - var updateBodyClass   = BodyClasses.push( 'extraclass', 'secondclass' )
+    - var thisPage          = "Загородное строительство"
+    - var PageTitle         = PageTitle.concat(' | ' + thisPage)
+    
+block content
+    section.breadcrumbs-block
+        .site-wrapper
+            ul
+                +navListItem( "Главная" )
+                +navListItem( "Каталог проектов" )
+                li
+                    span Дома из газобетона
+
+    .site-wrapper
+        section.projects-category
+            .projects-category__header-conatainer
+                h1 Дома из газобетона
+
+            .projects-category__filter-container
+                .projects-items-filter
+                    span.label Выводить по:
+                    ul
+                        li
+                            span 10
+                        +navListItem( "25" )
+                        +navListItem( "50" )
+
+            section.projects-category__projects-list
+                article.projects-list__project-item
+                    img.project-item__project-thumb( src="images/mockups/projects-list__thumb_01.jpg" )
+                    .project-item__project-desc
+                        .project-desc__project-header
+                            .project-title
+                                h3 Проект Инесса
+                                .project-title__header-stripe
+                            span.project-price 1 700 000 руб.
+                        .project-desc__info-row
+                            .info-row__info-item
+                                span.info-item__label Габариты дома:
+                                span.info-item__quantity 8х8 м
+                            .info-row__info-item
+                                span.info-item__label Общая площадь:
+                                span.info-item__quantity 201 м<sup>2</sup>
+                            .info-row__info-item
+                                span.info-item__label Общая высота:
+                                span.info-item__quantity 5 м
+                        .project-desc__text
+                            p Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене.
+                        a.btn__know-more--green( href="#" ) Узнать подробнее
+
+                article.projects-list__project-item
+                    img.project-item__project-thumb( src="images/mockups/projects-list__thumb_02.jpg" )
+                    .project-item__project-desc
+                        .project-desc__project-header
+                            .project-title
+                                h3 Проект Инесса
+                                .project-title__header-stripe
+                            span.project-price 1 700 000 руб.
+                        .project-desc__info-row
+                            .info-row__info-item
+                                span.info-item__label Габариты дома:
+                                span.info-item__quantity 8х8 м
+                            .info-row__info-item
+                                span.info-item__label Общая площадь:
+                                span.info-item__quantity 201 м<sup>2</sup>
+                            .info-row__info-item
+                                span.info-item__label Общая высота:
+                                span.info-item__quantity 5 м
+                        .project-desc__text
+                            p Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене.
+                        a.btn__know-more--green( href="#" ) Узнать подробнее
+
+                article.projects-list__project-item
+                    img.project-item__project-thumb( src="images/mockups/projects-list__thumb_03.jpg" )
+                    .project-item__project-desc
+                        .project-desc__project-header
+                            .project-title
+                                h3 Проект Инесса
+                                .project-title__header-stripe
+                            span.project-price 1 700 000 руб.
+                        .project-desc__info-row
+                            .info-row__info-item
+                                span.info-item__label Габариты дома:
+                                span.info-item__quantity 8х8 м
+                            .info-row__info-item
+                                span.info-item__label Общая площадь:
+                                span.info-item__quantity 201 м<sup>2</sup>
+                            .info-row__info-item
+                                span.info-item__label Общая высота:
+                                span.info-item__quantity 5 м
+                        .project-desc__text
+                            p Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене.
+                        a.btn__know-more--green( href="#" ) Узнать подробнее
+
+                section.pagination-block
+                    span.pods-pagination-paginate
+                        a.prev.page-numbers( href="#" )
+                        span.page-numbers.current 1
+                        a.page-numbers( href="#" ) 2
+                        a.page-numbers( href="#" ) 3
+                        a.page-numbers( href="#" ) 4
+                        a.next.page-numbers( href="#" )

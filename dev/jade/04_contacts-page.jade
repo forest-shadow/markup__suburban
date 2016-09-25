@@ -10,7 +10,7 @@ append config
     - var PageTitle         = PageTitle.concat(' | ' + thisPage)
     
 block content
-    section.pagination-block
+    section.breadcrumbs-block
         .site-wrapper
             ul
                 +navListItem( "Главная" )
@@ -57,7 +57,7 @@ block content
                             },
                             {
                                 'iconImageHref': "images/icons/balloon.png",
-                                'iconImageSize': [39, 58],
+                                'iconImageSize': [47, 55],
                                 'iconImageOffset': [-20, -55]
                             });
                     map.geoObjects.add(myPlacemark);
