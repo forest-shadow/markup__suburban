@@ -17,21 +17,80 @@ block content
                 +navListItem( "Дома из газобетона" )
                 li
                     span Проект Инесса
+    .site-wrapper
+        article.project-info
+            .project-info__header-container
+                h1 Проект Инесса
+                .header-container__header-stripe
 
-    article.project-info
-        .project-info__header-container
-            h1 Проект Инесса
-            .header-container__header-stripe
+            section.project-info__main-info
+                .main-info__project-desc-block
+                    .project-desc-block__project-slider
+                        img(src="images/mockups/project-page__thumb.jpg")
+                        img(src="images/mockups/project-page__thumb.jpg")
+                        img(src="images/mockups/project-page__thumb.jpg")
+                        img(src="images/mockups/project-page__thumb.jpg")
+                    .project-desc-block__project-desc
+                        h3.project-desc__desc-label Описание
+                        p Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный.
+                .main-info__project-details
+                    .project-details__price-block
+                        span.price-block__project-price 1 700 000 руб.
+                        span.price-block__project-prise-desc Стоимость строительства на вашем участке
+                    .project-details__information-block
+                        span.information-block__info-block-header Информация:
+                        .information-block__info-rows-container
+                            +projectInfoRow( "Габариты дома:", "8х8м" )
+                            +projectInfoRow( "Общая площадь:", "201 м<sup>2</sup>" )
+                            +projectInfoRow( "Общая высота:", "5 м" )
+                            +projectInfoRow( "1 этаж:", "2,5 м" )
+                            +projectInfoRow( "2 этаж:", "2,5 м" )
+                    .project-details__information-block
+                        span.information-block__info-block-header комплектация дома:
+                        .information-block__info-rows-container
+                            +projectInfoRow( "Фундамент:", "Плита бетонная 300мм" )
+                            +projectInfoRow( "Стены:", "Наружные и несущая газобетон 300мм" )
+                            +projectInfoRow( "Перекрытия:", "Монолитное ж/б" )
+                            +projectInfoRow( "Кровля:", "Металлопластиковые двухкамерные, входная металлическая и межкомнатные двери" )
+                            +projectInfoRow( "Срок постройки:", "От 2 месяцев" )
+                            +projectInfoRow( "Планировка:", "По желанию заказчика" )
+                    .project-details__btn-block
+                        a.btn__know-more--green(href="#") Узнать подробнее
 
-        section.project-info__main-info
-            .main-info__project-desc-block
-                .project-desc-block__project-slider
-                    img(src="images/mockups/project-page__thumb.jpeg")
-                    img(src="images/mockups/project-page__thumb.jpeg")
-                    img(src="images/mockups/project-page__thumb.jpeg")
-                    img(src="images/mockups/project-page__thumb.jpeg")
-                .project-desc-block__project-desc
-                    h3.project-desc__desc-label Описание
-                    p Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный. Просторный загородный дом 8х8,4м, площадью 135м² по доступной цене. Общая высота 5 м, второй этаж мансардный.
-            .main-info__project-details
+            section.project-info__project-planes
+                .project-planes__header-container
+                    h2 Варианты планировки этажей
+                    .header-container__header-stripe
+                .project-planes__planes-gallery
+                    .planes-gallery__gallery-plane-item
+                        img(src="images/mockups/project-page__project-plane-01.jpg")
+                        .gallery-plane-item__hover-block
+                    .planes-gallery__gallery-plane-item
+                        img(src="images/mockups/project-page__project-plane-02.jpg")
+                        .gallery-plane-item__hover-block
+                .project-planes__plane-note
+                    span Возможны альтернативные планировочные решения
 
+        section.projects-carousel-block
+            .projects-carousel-block__header-container
+                h2 Возможно вам понравится
+
+            .project-carousel
+                +projectsCarouselItems()
+
+            a.btn__know-more(href="#") Все проекты
+
+        section.request-form-block
+            .request-form-block__header-container
+                h2 Отправьте заявку
+                .header-container__header-stripe
+                h3 И мы подберем для Вас индивидуальный проект
+            form#request-form.requets-form(action="")
+                .inputs-row
+                    p
+                        label(for="name") Ваше имя
+                        input#name(name="name", type="text")
+                    p
+                        label(for="phone") *Ваш телефон
+                        input#phone(name="phone", type="text")
+                input.btn__send-form--white-arrow(type="submit", value="Подобрать проект")

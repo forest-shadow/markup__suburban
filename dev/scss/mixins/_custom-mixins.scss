@@ -32,3 +32,26 @@
 
     }
 }
+
+@mixin slickWhiteArrowsBlocks() {
+    .slick-prev,
+    .slick-next {
+        @include size( 70px 470px );
+        z-index: 2;
+
+        &:before {
+            content: '';
+        }
+    }
+
+    .slick-prev {
+        left: 0px;
+        background: url( 'images/icons/slider__prev--white.png' ) center center no-repeat, rgba( #000, .5);
+    }
+
+    .slick-next {
+        right: 0px;
+        background: url( 'images/icons/slider__next--white.png' ) center center no-repeat, rgba( #000, .5);
+
+    }
+}

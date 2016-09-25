@@ -1,3 +1,329 @@
 /*********************************************
  * Project Page Styles
  *********************************************/
+/*********************************************
+ * 01. Project Info Article Styles
+ *********************************************/
+article.project-info {
+    @include padding ( 30px null 10px );
+
+    .project-info__header-container {
+        margin-bottom: 50px;
+
+        h1 {
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .header-container__header-stripe {
+            height: 4px;
+            @include background( linear-gradient(to right, #b9df52, #6ba942) );
+            width: 156px;
+        }
+    }
+}
+
+/*********************************************
+ * 01.01. Project Main Info Section Styles
+ *********************************************/
+section.project-info__main-info {
+    display: flex;
+    @include justify-content( space-between );
+    @include size( 100% 770px );
+    @include align-items( stretch );
+    margin-bottom: 50px;
+
+    .main-info__project-desc-block {
+        padding-top: 30px;
+        width: 770px;
+        background: $sub-purple--light;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+    }
+
+    .project-desc-block__project-slider {
+        @include slickWhiteArrowsBlocks();
+        margin-bottom: 0;
+
+        .slick-dots {
+            @include position( absolute, null 0 25px);
+
+            button::before {
+                content: '';
+            }
+
+            li {
+                button {
+                    @include size( 10px );
+                    background: $sub-purple;
+                    border-radius: 50%;
+                    opacity: .5;
+                }
+
+                &.slick-active button {
+                    border: 2px solid #fff;
+                    background: $sub-purple;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+    .project-desc-block__project-desc {
+        @include padding( 20px 18px );
+
+        h3.project-desc__desc-label {
+            text-transform: uppercase;
+            font-family: 'OpenSans Bold', sans-serif;
+            font-size: 18px;
+            margin-bottom: 12px;
+        }
+
+        p{
+            line-height: 23px;
+        }
+    }
+
+
+    .main-info__project-details {
+        @include padding( 30px 18px null );
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        border-radius: 30px;
+        width: 370px;
+        background: $sub-purple;
+        color: #fff;
+    }
+
+    .project-details__price-block {
+        margin-bottom: 22px;
+
+        span.price-block__project-price {
+            display: block;
+            color: $sub-dark-green;
+            font-size: 24px;
+            font-family: 'OpenSans Bold', sans-serif;
+            text-transform: uppercase;
+            line-height: 24px;
+            margin-bottom: 14px;
+        }
+
+        span.price-block__project-prise-desc {
+            line-height: 20px;
+            display: block;
+        }
+    }
+
+    .project-details__information-block {
+        margin-bottom: 36px;
+
+        span.information-block__info-block-header {
+            text-transform: uppercase;
+            font-size: 18px;
+            font-family: 'OpenSans Bold', sans-serif;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .info-rows-container__info-row {
+            @include clearfix();
+            line-height: 20px;
+            margin-bottom: 3px;
+
+            & > * {
+                float: left;
+            }
+
+            span.label {
+                width: 152px;
+                font-family: 'OpenSans Bold', sans-serif;
+            }
+
+            span.quantity {
+                width: 180px;
+            }
+
+        }
+    }
+
+    .project-details__btn-block {
+        text-align: center;
+    }
+}
+
+/*********************************************
+ * 01.02. Project Planes Gallery Section Styles
+ *********************************************/
+section.project-info__project-planes {
+    .project-planes__header-container {
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .header-container__header-stripe {
+            height: 4px;
+            @include background( linear-gradient(to right, #b9df52, #6ba942) );
+            width: 156px;
+        }
+    }
+}
+
+.project-planes__planes-gallery {
+    @include outer-container();
+    margin-bottom: 30px;
+
+    .planes-gallery__gallery-plane-item {
+        @include span-columns( 4 );
+        border: 1px solid #ddd;
+        -webkit-border-radius: 36px;
+        -moz-border-radius: 36px;
+        border-radius: 36px;
+        overflow: hidden;
+        position: relative;
+        background: #fff;
+
+        &:hover {
+            .gallery-plane-item__hover-block {
+                display: block;
+            }
+        }
+
+        img {
+            display: block;
+            @include size( 100% );
+        }
+
+        .gallery-plane-item__hover-block {
+            display: none;
+            @include position( absolute, 0 null null 0);
+            z-index: 2;
+            @include size( 100% );
+            @include background( url( 'images/icons/carousel-projects__loupe.png' ) center center no-repeat,
+                    rgba( $sub-purple, .6 ) );
+        }
+    }
+}
+
+.project-planes__plane-note {
+    span {
+        font-family: 'OpenSans Italic', sans-serif;
+        font-size: 24px;
+        display: inline-block;
+        vertical-align: middle;
+
+        &:before {
+            content: '';
+            display: inline-block;
+            @include sprite( $s-info );
+            vertical-align: middle;
+            margin-top: -4px;
+            margin-right: 12px;
+        }
+    }
+}
+
+/*********************************************
+ * 02. Request Form Block Section Styles
+ *********************************************/
+section.request-form-block {
+    @include clearfix();
+    padding-bottom: 70px;
+
+    .request-form-block__header-container {
+        margin-bottom: 30px;
+        text-align: center;
+
+        h2 {
+            font-size: 30px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            text-transform: uppercase;
+            font-family: 'OpenSans Bold', sans-serif;
+            font-size: 18px;
+        }
+
+        .header-container__header-stripe {
+            height: 4px;
+            @include background( linear-gradient(to right, #b9df52, #6ba942) );
+            width: 156px;
+            margin: 0 auto 20px;
+        }
+    }
+
+    form {
+        width: 670px;
+        margin: 0 auto;
+
+        p {
+            &:last-of-type {
+                margin-bottom: 54px;
+            }
+        }
+
+        label {
+            text-align: left;
+            color: #a8acb9;
+            font-weight: bold;
+            font-size: 12px;
+            padding-left: 16px;
+        }
+
+        .inputs-row {
+            @include outer-container();
+            margin-bottom: 30px;
+
+
+            & > p {
+                @include span-columns( 6 );
+                margin-bottom: 0;
+            }
+
+            input {
+                margin-bottom: 0;
+            }
+        }
+
+
+        input[type="text"] {
+            @include padding ( 14px 20px );
+            -webkit-border-radius: 46px;
+            -moz-border-radius: 46px;
+            border-radius: 46px;
+            background: #eff0f4;
+            border: none;
+            color: $base-font-color;
+            font-size: 14px;
+
+            &:active,
+            &:focus,
+            &:hover {
+                -webkit-box-shadow: 3px 3px 11px 0px rgba(50, 50, 50, 0.75);
+                -moz-box-shadow:    3px 3px 11px 0px rgba(50, 50, 50, 0.75);
+                box-shadow:         3px 3px 11px 0px rgba(50, 50, 50, 0.75);
+            }
+        }
+
+        .btn__send-form--white-arrow {
+            width: 327px;
+            float: right;
+            @include background( url('images/icons/form__arrow--white.png') 258px 20px no-repeat, linear-gradient(to right, #b9df52, #6ba942) );
+            @include padding( 26px 72px 26px 52px );
+            
+            &:hover {
+                @include padding( 26px 72px 26px 52px );
+                @include background( url('images/icons/form__arrow--white.png') 258px 20px no-repeat,
+                        linear-gradient(to right, darken( #b9df52, 10%) , darken( #6ba942, 10%) ) );
+            }
+        }
+
+    }
+}

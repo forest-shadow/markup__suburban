@@ -2,6 +2,10 @@ mixin navListItem( name )
     li
         a( href="#" )= name
 
+mixin projectInfoRow ( label, quantity )
+    .info-rows-container__info-row
+        span.label= label
+        span.quantity= quantity
 
 mixin projectsCarouselItems()
     a.project-carousel__project-item( href="#" )
