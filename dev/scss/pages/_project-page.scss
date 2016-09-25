@@ -233,7 +233,7 @@ section.project-info__project-planes {
  *********************************************/
 section.request-form-block {
     @include clearfix();
-    padding-bottom: 70px;
+    @include padding ( 40px null 70px );
 
     .request-form-block__header-container {
         margin-bottom: 30px;
@@ -315,9 +315,10 @@ section.request-form-block {
         .btn__send-form--white-arrow {
             width: 327px;
             float: right;
-            @include background( url('images/icons/form__arrow--white.png') 258px 20px no-repeat, linear-gradient(to right, #b9df52, #6ba942) );
+            @include background( url('images/icons/form__arrow--white.png') 258px 20px no-repeat,
+                    linear-gradient(to right, #b9df52, #6ba942) );
             @include padding( 26px 72px 26px 52px );
-            
+
             &:hover {
                 @include padding( 26px 72px 26px 52px );
                 @include background( url('images/icons/form__arrow--white.png') 258px 20px no-repeat,

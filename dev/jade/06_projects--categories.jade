@@ -1,0 +1,71 @@
+extends layout/site-layout
+include modules/mixins
+
+append config
+    - var PageTitle         = "Каталог проектов"
+    - var MetaDesc          = "Meta Description for current page!!!"
+    - var jQuery            = true
+    - var updateBodyClass   = BodyClasses.push( 'extraclass', 'secondclass' )
+    - var thisPage          = "Загородное строительство"
+    - var PageTitle         = PageTitle.concat(' | ' + thisPage)
+    
+block content
+    section.breadcrumbs-block
+        .site-wrapper
+            ul
+                +navListItem( "Главная" )
+                li
+                    span Каталог проектов
+
+    .site-wrapper
+        section.projects-carousel-block
+            .projects-carousel-block__header-container
+                h2 Дома из газобетона
+
+            .project-carousel
+                +projectsCarouselItems()
+
+            a.btn__know-more(href="#") Все проекты
+
+
+        section.projects-carousel-block
+            .projects-carousel-block__header-container
+                h2 Каркасные дома
+
+            .project-carousel
+                +projectsCarouselItems()
+
+            a.btn__know-more(href="#") Все проекты
+
+        section.projects-carousel-block
+            .projects-carousel-block__header-container
+                h2 Дома из клееного бруса
+
+            .project-carousel
+                +projectsCarouselItems()
+
+            a.btn__know-more(href="#") Все проекты
+
+        section.projects-carousel-block
+            .projects-carousel-block__header-container
+                h2 Дома из прессованного кирпича
+
+            .project-carousel
+                +projectsCarouselItems()
+
+            a.btn__know-more(href="#") Все проекты
+
+        section.request-form-block
+            .request-form-block__header-container
+                h2 Отправьте заявку
+                .header-container__header-stripe
+                h3 И мы подберем для Вас индивидуальный проект
+            form#request-form.requets-form(action="")
+                .inputs-row
+                    p
+                        label(for="name") Ваше имя
+                        input#name(name="name", type="text")
+                    p
+                        label(for="phone") *Ваш телефон
+                        input#phone(name="phone", type="text")
+                input.btn__send-form--white-arrow(type="submit", value="Подобрать проект")
