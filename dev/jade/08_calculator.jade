@@ -1,0 +1,79 @@
+extends layout/site-layout
+include modules/mixins
+
+append config
+    - var PageTitle         = "Калькулятор"
+    - var MetaDesc          = "Meta Description for current page!!!"
+    - var jQuery            = true
+    - var updateBodyClass   = BodyClasses.push( 'extraclass', 'secondclass' )
+    - var thisPage          = "Загородное строительство"
+    - var PageTitle         = PageTitle.concat(' | ' + thisPage)
+    
+block content
+    section.breadcrumbs-block
+        .site-wrapper
+            ul
+                +navListItem( "Главная" )
+                li
+                    span Калькулятор
+
+    .site-wrapper
+        section.calculator-block
+            form#calculator.calculator(action="")
+                .calculator-block__calculator-row
+                    .calculator-row__header-container
+                        h2 Выберите тип фундамента
+                        .header-container__header-stripe
+                    .calculator-row__radio-list
+                        .radio-list__radio-item
+                            img(src="images/calculator/groundwork__01-plate.jpg")
+                            input#groundwork__plate(type="radio", name="groundwork" value="1")
+                            label(for="groundwork__plate") Плита
+                        .radio-list__radio-item
+                            img(src="images/calculator/groundwork__02-plate-with-grillage.jpg")
+                            input#groundwork__plate-with-grillage(type="radio", name="groundwork", value="2")
+                            label(for="groundwork__plate-with-grillage") Плита с ростверком
+                        .radio-list__radio-item
+                            img(src="images/calculator/groundwork__03-base.jpg")
+                            input#groundwork__base(type="radio", name="groundwork", value="3")
+                            label(for="groundwork__base") Цоколь
+                        .radio-list__radio-item
+                            img(src="images/calculator/groundwork__04-deep-base.jpg")
+                            input#groundwork__deep-base(type="radio", name="groundwork", value="4")
+                            label(for="groundwork__deep-base") Заглубленная лента
+
+                .calculator-block__calculator-row
+                    .calculator-row__header-container
+                        h2 Выберите материал для стен
+                        .header-container__header-stripe
+                    .calculator-row__radio-list
+                        .radio-list__radio-item
+                            img(src="images/calculator/walls__01-aerocrete.jpg")
+                            input#walls__aerocrete(type="radio", name="walls" value="1")
+                            label(for="walls__aerocrete") Газобетон
+                        .radio-list__radio-item
+                            img(src="images/calculator/walls__02-porous-brick.jpg")
+                            input#walls__porous-brick(type="radio", name="walls", value="2")
+                            label(for="walls__porous-brick") Поризованный кирпич
+                        .radio-list__radio-item
+                            img(src="images/calculator/walls__03-keramzit.jpg")
+                            input#walls__keramzit(type="radio", name="walls", value="3")
+                            label(for="walls__keramzit") Цоколь
+                        .radio-list__radio-item
+                            img(src="images/calculator/walls__04-glued-timber.jpg")
+                            input#walls__glued-timber(type="radio", name="walls", value="4")
+                            label(for="walls__glued-timber") Заглубленная лента
+
+                .calculator-block__calculator-row
+                    .calculator-row__header-container
+                        h2 Выберите тип перекрытия
+                        .header-container__header-stripe
+                    .calculator-row__radio-list
+                        .radio-list__radio-item
+                            img(src="images/calculator/floors__01-concrete.jpg")
+                            input#floors__concrete(type="radio", name="floors" value="1")
+                            label(for="floors__concrete") Молотитное ж/б
+                        .radio-list__radio-item
+                            img(src="images/calculator/floors__02-wooden-beams.jpg")
+                            input#floors__wooden-beams(type="radio", name="floors", value="2")
+                            label(for="floors__wooden-beams") Поризованный кирпич

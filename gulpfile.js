@@ -160,6 +160,12 @@ gulp.task( 'images:mockups', function() {
         .pipe( gulp.dest( 'dist/images/mockups/' ) );
 });
 
+gulp.task( 'images:calculator', function() {
+    gulp.src( ['dev/images/calculator/**/*.*'] )
+        .pipe( imagemin() )
+        .pipe( gulp.dest( 'dist/images/calculator/' ) );
+});
+
 /*******************************
  * Spritesmith task
  *******************************/
@@ -202,7 +208,7 @@ gulp.task('watch', function() {
     gulp.watch( 'dev/fonts/**/*', [ 'fonts' ] );
     gulp.watch( 'dev/scss/**/*.scss', [ 'sass', reload ] );
     gulp.watch( 'dev/js/**/*.js', [ 'scripts', reload ] );
-    gulp.watch( 'dev/images/**/*.*', [ 'images', 'images:vendor', 'images:mockups', 'images:spritesmith', reload ] );
+    gulp.watch( 'dev/images/**/*.*', [ 'images', 'images:vendor', 'images:mockups', 'images:calculator', 'images:spritesmith', reload ] );
 });
 
 
@@ -243,4 +249,4 @@ gulp.task( 'cleanDistDir', function( cb ) {
 /*******************************
  * Default Task
  *******************************/
-gulp.task( 'default', [ 'jade', 'fonts', 'sass', 'scripts', 'images', 'images:vendor', 'images:mockups', 'images:spritesmith', 'browsersync', 'watch' ] );
+gulp.task( 'default', [ 'jade', 'fonts', 'sass', 'scripts', 'images', 'images:vendor', 'images:mockups', 'images:calculator', 'images:spritesmith', 'browsersync', 'watch' ] );
