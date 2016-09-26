@@ -48,3 +48,20 @@ section.breadcrumbs-block {
         }
     }
 }
+
+.folding-cube__loading-container {
+    @include position( fixed, 0 0 0 0 );
+    z-index: 9999;
+    @include size( 100% );
+    //background: transparentize(#B6DD52, .1);
+    background: #B6DD52;
+    
+    .sk-folding-cube {
+        @include position( absolute, 0 0 0 0 );
+        margin: auto;
+
+        .sk-cube::before {
+            background: #fff;
+        }
+    }
+}

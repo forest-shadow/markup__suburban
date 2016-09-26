@@ -22,58 +22,149 @@ block content
             form#calculator.calculator(action="")
                 .calculator-block__calculator-row
                     .calculator-row__header-container
-                        h2 Выберите тип фундамента
+                        h2 Выберите тип фундамента:
                         .header-container__header-stripe
-                    .calculator-row__radio-list
+                    .calculator-row__radio-list.radio-list__groundwork-list
                         .radio-list__radio-item
-                            img(src="images/calculator/groundwork__01-plate.jpg")
-                            input#groundwork__plate(type="radio", name="groundwork" value="1")
-                            label(for="groundwork__plate") Плита
+                            .radio-item__item-thumb
+                                img(src="images/calculator/groundwork__01-plate.jpg")
+                            .radio-item__item-inputs
+                                input#groundwork__plate(type="radio", name="groundwork" value="Плита")
+                                label(for="groundwork__plate") Плита
                         .radio-list__radio-item
-                            img(src="images/calculator/groundwork__02-plate-with-grillage.jpg")
-                            input#groundwork__plate-with-grillage(type="radio", name="groundwork", value="2")
-                            label(for="groundwork__plate-with-grillage") Плита с ростверком
+                            .radio-item__item-thumb
+                                img(src="images/calculator/groundwork__02-plate-with-grillage.jpg")
+                            .radio-item__item-inputs
+                                input#groundwork__plate-with-grillage(type="radio", name="groundwork", value="Плита с ростверком")
+                                label(for="groundwork__plate-with-grillage") Плита с ростверком
                         .radio-list__radio-item
-                            img(src="images/calculator/groundwork__03-base.jpg")
-                            input#groundwork__base(type="radio", name="groundwork", value="3")
-                            label(for="groundwork__base") Цоколь
+                            .radio-item__item-thumb
+                                img(src="images/calculator/groundwork__03-base.jpg")
+                            .radio-item__item-inputs
+                                input#groundwork__base(type="radio", name="groundwork", value="Цоколь")
+                                label(for="groundwork__base") Цоколь
                         .radio-list__radio-item
-                            img(src="images/calculator/groundwork__04-deep-base.jpg")
-                            input#groundwork__deep-base(type="radio", name="groundwork", value="4")
-                            label(for="groundwork__deep-base") Заглубленная лента
+                            .radio-item__item-thumb
+                                img(src="images/calculator/groundwork__04-deep-base.jpg")
+                            .radio-item__item-inputs
+                                input#groundwork__deep-base(type="radio", name="groundwork", value="Заглубленная лента")
+                                label(for="groundwork__deep-base") Заглубленная лента
 
                 .calculator-block__calculator-row
                     .calculator-row__header-container
-                        h2 Выберите материал для стен
+                        h2 Выберите материал для стен:
                         .header-container__header-stripe
-                    .calculator-row__radio-list
+                    .calculator-row__radio-list.radio-list__walls-list
                         .radio-list__radio-item
-                            img(src="images/calculator/walls__01-aerocrete.jpg")
-                            input#walls__aerocrete(type="radio", name="walls" value="1")
-                            label(for="walls__aerocrete") Газобетон
+                            .radio-item__item-thumb
+                                img(src="images/calculator/walls__01-aerocrete.jpg")
+                            .radio-item__item-inputs
+                                input#walls__aerocrete(type="radio", name="walls" value="Газобетон")
+                                label(for="walls__aerocrete") Газобетон
                         .radio-list__radio-item
-                            img(src="images/calculator/walls__02-porous-brick.jpg")
-                            input#walls__porous-brick(type="radio", name="walls", value="2")
-                            label(for="walls__porous-brick") Поризованный кирпич
+                            .radio-item__item-thumb
+                                img(src="images/calculator/walls__02-porous-brick.jpg")
+                            .radio-item__item-inputs
+                                input#walls__porous-brick(type="radio", name="walls", value="Поризованный кирпич")
+                                label(for="walls__porous-brick") Поризованный кирпич
                         .radio-list__radio-item
-                            img(src="images/calculator/walls__03-keramzit.jpg")
-                            input#walls__keramzit(type="radio", name="walls", value="3")
-                            label(for="walls__keramzit") Цоколь
+                            .radio-item__item-thumb
+                                img(src="images/calculator/walls__03-keramzit.jpg")
+                            .radio-item__item-inputs
+                                input#walls__keramzit(type="radio", name="walls", value="Керамзитбетон")
+                                label(for="walls__keramzit") Керамзитбетон
                         .radio-list__radio-item
-                            img(src="images/calculator/walls__04-glued-timber.jpg")
-                            input#walls__glued-timber(type="radio", name="walls", value="4")
-                            label(for="walls__glued-timber") Заглубленная лента
+                            .radio-item__item-thumb
+                                img(src="images/calculator/walls__04-glued-timber.jpg")
+                            .radio-item__item-inputs
+                                input#walls__glued-timber(type="radio", name="walls", value="Клееный брус")
+                                label(for="walls__glued-timber") Клееный брус
 
                 .calculator-block__calculator-row
                     .calculator-row__header-container
-                        h2 Выберите тип перекрытия
+                        h2 Выберите тип перекрытия:
                         .header-container__header-stripe
-                    .calculator-row__radio-list
+                    .calculator-row__radio-list.radio-list__floors-list
                         .radio-list__radio-item
-                            img(src="images/calculator/floors__01-concrete.jpg")
-                            input#floors__concrete(type="radio", name="floors" value="1")
-                            label(for="floors__concrete") Молотитное ж/б
+                            .radio-item__item-thumb
+                                img(src="images/calculator/floors__01-concrete.jpg")
+                            .radio-item__item-inputs
+                                input#floors__concrete(type="radio", name="floors" value="Молотитное ж/б")
+                                label(for="floors__concrete") Молотитное ж/б
                         .radio-list__radio-item
-                            img(src="images/calculator/floors__02-wooden-beams.jpg")
-                            input#floors__wooden-beams(type="radio", name="floors", value="2")
-                            label(for="floors__wooden-beams") Поризованный кирпич
+                            .radio-item__item-thumb
+                                img(src="images/calculator/floors__02-wooden-beams.jpg")
+                            .radio-item__item-inputs
+                                input#floors__wooden-beams(type="radio", name="floors", value="Деревянные балки")
+                                label(for="floors__wooden-beams") Деревянные балки
+
+                .calculator-block__calculator-row
+                    .calculator-row__header-container
+                        h2 Выберите тип кровли:
+                        .header-container__header-stripe
+                    .calculator-row__radio-list.radio-list__roof-list
+                        .radio-list__radio-item
+                            .radio-item__item-thumb
+                                img(src="images/calculator/roof__01-metal-tile.jpg")
+                            .radio-item__item-inputs
+                                input#roof__metal-tile(type="radio", name="roof" value="Металлочерепица")
+                                label(for="roof__metal-tile") Металлочерепица
+                        .radio-list__radio-item
+                            .radio-item__item-thumb
+                                img(src="images/calculator/roof__02-flex-tile.jpg")
+                            .radio-item__item-inputs
+                                input#roof__flex-tile(type="radio", name="roof", value="Гибкая черепица")
+                                label(for="roof__flex-tile") Гибкая черепица
+                        .radio-list__radio-item
+                            .radio-item__item-thumb
+                                img(src="images/calculator/roof__03-natural-tile.jpg")
+                            .radio-item__item-inputs
+                                input#roof__natural-tile(type="radio", name="roof", value="Натуральная черепица")
+                                label(for="roof__natural-tile") Натуральная черепица
+
+                .calculator-block__calculator-row
+                    .calculator-row__header-container
+                        h2 Выберите облицовку:
+                        .header-container__header-stripe
+                    .calculator-row__radio-list.radio-list__covering-list
+                        .radio-list__radio-item
+                            .radio-item__item-thumb
+                                img(src="images/calculator/covering__01-facing-brick.jpg")
+                            .radio-item__item-inputs
+                                input#covering__facing-brick(type="radio", name="covering" value="Облицовочный кирпич")
+                                label(for="covering__facing-brick") Облицовочный кирпич
+                        .radio-list__radio-item
+                            .radio-item__item-thumb
+                                img(src="images/calculator/covering__02-plaster.jpg")
+                            .radio-item__item-inputs
+                                input#covering__plaster(type="radio", name="covering", value="Штукатурка")
+                                label(for="covering__plaster") Штукатурка
+                        .radio-list__radio-item
+                            .radio-item__item-thumb
+                                img(src="images/calculator/covering__03-facade-panel.jpg")
+                            .radio-item__item-inputs
+                                input#covering__facade-panel(type="radio", name="covering" value="Фасадные панели")
+                                label(for="covering__facade-panel") Фасадные панели
+                        .radio-list__radio-item
+                            .radio-item__item-thumb
+                                img(src="images/calculator/covering__04-siding.jpg")
+                            .radio-item__item-inputs
+                                input#covering__siding(type="radio", name="covering", value="Сайдинг")
+                                label(for="covering__siding") Сайдинг
+
+                .calculator-block__inputs-block
+                    .inputs-block__inputs-row
+                        p
+                            label(for="name") Ваше имя
+                            input#name(name="name", type="text")
+                        p
+                            label(for="phone") *Ваш телефон
+                            input#phone(name="phone", type="text")
+
+                    .inputs-block__inputs-row
+                        p
+                            label(for="home_square") *Общая площадь дома
+                            input#home_square(name="home_square", type="text")
+                            span.input-unit м<sup>2</sup>
+                        p
+                            input.btn__send-form--white-arrow(type="submit", value="Поcчитать")
