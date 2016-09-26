@@ -3,6 +3,8 @@ $( window ).on( 'load', function() {
 } );
 
 $( document ).ready( function(){
+
+    // 01. Init mainpage slider
     $( '.mainpage-slider' ).slick({
         arrows: false,
         dots: true,
@@ -14,6 +16,7 @@ $( document ).ready( function(){
         autoplaySpeed: 7000
     });
 
+    // 02. Init project slider on single project page
     $( '.project-desc-block__project-slider' ).slick({
         arrows: true,
         dots: true,
@@ -25,6 +28,7 @@ $( document ).ready( function(){
         autoplaySpeed: 7000
     });
 
+    // 04. Init ptojects carousels
     $( '.project-carousel' ).slick({
         arrows: true,
         dots: true,
@@ -37,11 +41,45 @@ $( document ).ready( function(){
         //autoplaySpeed: 7000
     });
 
+    // 04. Feedback call popup
+    $( '.feedback-call-popup' ).magnificPopup({
+        type: 'inline',
+        preloader: false,
+        focus: '#name',
+
+        // When elemened is focused, some mobile browsers in some cases zoom in
+        // It looks not nice, so we disable it:
+        callbacks: {
+            beforeOpen: function() {
+                if($(window).width() < 700) {
+                    this.st.focus = false;
+                } else {
+                    this.st.focus = '#name';
+                }
+            }
+        },
+
+        fixedContentPos: false,
+        fixedBgPos: true,
+
+        overflowY: 'auto',
+
+        closeBtnInside: true,
+        preloader: false,
+
+        midClick: true,
+        removalDelay: 300,
+        mainClass: 'my-mfp-zoom-in'
+    });
+
+    // 04. Calculator radio options opacity changers
     changeImageOpacityRadio( '.radio-list__groundwork-list' );
     changeImageOpacityRadio( '.radio-list__walls-list' );
     changeImageOpacityRadio( '.radio-list__floors-list' );
     changeImageOpacityRadio( '.radio-list__roof-list' );
     changeImageOpacityRadio( '.radio-list__covering-list' );
+
+    $( "input[name='phone']" ).mask( "(999) 999-9999" );
 });
 
 function changeImageOpacityRadio ( context ) {

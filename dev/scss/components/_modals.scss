@@ -1,3 +1,161 @@
 /*********************************************
  * Modals Styles
  *********************************************/
+.feedback-call-form__container {
+    @include padding( 40px 50px 48px );
+    position: relative;
+    margin: 0 auto;
+    width: 770px;
+    background: #fff;
+    -webkit-border-radius: 36px;
+    -moz-border-radius: 36px;
+    border-radius: 36px;
+
+    .mfp-close {
+        @include sprite( $s-popup-close );
+        top: -50px;
+        color: transparent;
+    }
+
+    h1 {
+        width: 274px;
+        margin: 0 auto 38px;
+        padding-left: 36px;
+        background: url( 'images/icons/popup__feedback-call.png') 2px 6px no-repeat;
+        text-transform: uppercase;
+        font-family: 'OpenSans Bold', sans-serif;
+        color: #67b72e;
+    }
+
+    p {
+        width: 520px;
+        margin: 0 auto 40px;
+        text-align: center;
+    }
+
+    p {
+        &:last-of-type {
+            margin-bottom: 54px;
+        }
+    }
+
+    label {
+        text-align: left;
+        color: #a8acb9;
+        font-weight: bold;
+        font-size: 12px;
+        padding-left: 16px;
+    }
+
+    .inputs-row {
+        @include outer-container();
+        margin-bottom: 30px;
+
+
+        & > p {
+            @include span-columns( 6 );
+            margin-bottom: 0;
+        }
+
+        input {
+            margin-bottom: 0;
+        }
+    }
+
+
+    input[type="text"] {
+        @include padding ( 14px 20px );
+        -webkit-border-radius: 46px;
+        -moz-border-radius: 46px;
+        border-radius: 46px;
+        background: #eff0f4;
+        border: none;
+        color: $base-font-color;
+        font-size: 14px;
+
+        &:active,
+        &:focus,
+        &:hover {
+            -webkit-box-shadow: 3px 3px 11px 0px rgba(50, 50, 50, 0.75);
+            -moz-box-shadow:    3px 3px 11px 0px rgba(50, 50, 50, 0.75);
+            box-shadow:         3px 3px 11px 0px rgba(50, 50, 50, 0.75);
+        }
+    }
+
+    input[type="submit"].btn__send-form--white-arrow {
+        width: 327px;
+        margin: 0 auto;
+        display: block;
+        @include background( url('images/icons/form__arrow--white.png') 218px 20px no-repeat,
+                linear-gradient(to right, #b9df52, #6ba942) );
+        @include padding( 26px 78px 26px 86px );
+
+        &:hover {
+            @include padding( 26px 78px 26px 86px );
+            @include background( url('images/icons/form__arrow--white.png') 218px 20px no-repeat,
+                    linear-gradient(to right, darken( #b9df52, 10%) , darken( #6ba942, 10%) ) );
+        }
+    }
+}
+
+
+/**
+ * Fade-zoom animation for first dialog
+ */
+
+/* start state */
+.my-mfp-zoom-in .zoom-anim-dialog {
+    opacity: 0;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+
+
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+/* animate in */
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+    opacity: 1;
+
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+/* animate out */
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+    -webkit-transform: scale(0.8);
+    -moz-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    -o-transform: scale(0.8);
+    transform: scale(0.8);
+
+    opacity: 0;
+}
+
+/* Dark overlay, start state */
+.my-mfp-zoom-in.mfp-bg {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+}
+/* animate in */
+.my-mfp-zoom-in.mfp-ready.mfp-bg {
+    opacity: 0.8;
+}
+/* animate out */
+.my-mfp-zoom-in.mfp-removing.mfp-bg {
+    opacity: 0;
+}
