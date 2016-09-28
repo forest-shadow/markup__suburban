@@ -26,6 +26,7 @@ body {
  * 01. Pagination block Styles
  *********************************************/
 section.breadcrumbs-block {
+    min-width: 1280px;
     margin-top: 131px;
     background: #eff0f4;
     @include padding( 15px null );

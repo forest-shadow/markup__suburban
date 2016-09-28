@@ -6,6 +6,7 @@
  *********************************************/
 .mainpage-slider__container {
     width: 100%;
+    min-width: 1280px;
     margin-top: 131px;
     position: relative;
 
@@ -14,6 +15,7 @@
     }
 
     .mainpage-slider {
+        min-width: 100%;
         .mainpage-slider__slide {
             @include size( 100% 600px );
         }
@@ -223,6 +225,7 @@
  *********************************************/
 .dreamhouses-form-block {
     @include size( 100% 500px );
+    min-width: 1280px;
     padding-top: 48px;
 
     h2 {
@@ -281,6 +284,7 @@
     @include flex-direction(row);
     @include justify-content(flex-start);
     @include size( 100% 350px );
+    min-width: 1280px;
 
     .suburban-building-block__suburban-heading {
         @include padding( 62px 42px null );
@@ -448,7 +452,7 @@
                 font-size: 16px;
                 font-family: 'OpenSans Bold', sans-serif;
                 display: inline-block;
-                margin-right: 10px;
+                margin-right: 6px;
             }
 
         }
@@ -461,6 +465,7 @@
 .project-request-block {
     @include size( 100% 545px );
     padding-top: 46px;
+    min-width: 1280px;
 
     h2 {
         font-family: 'OpenSans Light', sans-serif;
@@ -525,6 +530,7 @@
  * 07. Calculation block Styles
  *********************************************/
 section.calculation-block {
+    min-width: 1280px;
     display: flex;
     @include align-items(stretch);
     @include flex-direction(row);

@@ -1,9 +1,10 @@
 /*********************************************
  * Footer Section
  *********************************************/
-section.site-footer {
+footer.site-footer {
     @include size( 100% 645px );
     padding-top: 108px;
+    min-width: 1280px;
 
     .site-footer__footer-container {
         display: flex;
@@ -120,6 +121,7 @@ section.site-footer {
 }
 
 section.copyrights {
+    min-width: 1280px;
     background: #67b72e;
     @include padding( 16px null );
 
