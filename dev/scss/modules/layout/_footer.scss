@@ -26,6 +26,7 @@ footer.site-footer {
     .site-footer__contact-form-block {
         form {
             p {
+                @include clearfix();
                 margin-bottom: 30px;
             }
 
@@ -83,6 +84,11 @@ footer.site-footer {
 
             textarea {
                 background: url( 'images/icons/form-footer__message.png' ) 16px 12px no-repeat, rgba( #fff, .4 );
+                margin-bottom: 30px;
+            }
+
+            .btn__send-form--green-arrow {
+                margin-top: 30px;
             }
 
         }

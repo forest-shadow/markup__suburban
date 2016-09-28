@@ -108,10 +108,8 @@
 
     form {
 
-        p {
-            &:last-of-type {
-                margin-bottom: 54px;
-            }
+        img.ajax-loader {
+            display: none!important;
         }
 
         label {
@@ -131,6 +129,7 @@
             border: none;
             color: $base-font-color;
             font-size: 14px;
+            margin-top: -20px;
 
             &:active,
             &:focus,
@@ -139,6 +138,10 @@
                 -moz-box-shadow:    3px 3px 11px 0px rgba(50, 50, 50, 0.75);
                 box-shadow:         3px 3px 11px 0px rgba(50, 50, 50, 0.75);
             }
+        }
+
+        .btn__send-form--white-arrow {
+            margin-top: 20px;
         }
 
     }

@@ -66,3 +66,31 @@ section.breadcrumbs-block {
         }
     }
 }
+
+
+form {
+    span.wpcf7-not-valid-tip {
+        display: none;
+    }
+    div.wpcf7-validation-errors {
+        padding: 10px 20px;
+        text-align: center;
+        background-color: #e85445;
+        color: #fff;
+        border:none;
+        margin: 10px 0 0;
+    }
+
+    div.wpcf7-mail-sent-ok {
+        padding: 10px 20px;
+        text-align: center;
+        background-color: #27ae60;
+        color: #fff;
+        border:none;
+        margin: 10px 0 0;
+    }
+
+    input[type="submit"]:focus {
+        outline: none;
+    }
+}
