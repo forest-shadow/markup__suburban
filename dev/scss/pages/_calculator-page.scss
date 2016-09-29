@@ -149,11 +149,21 @@ section.calculator-block {
         width: 220px;
         display: inline-block;
         margin-right: 14px;
+        margin-top: -20px;
+        float: left;
     }
 
     span.input-unit {
         font-family: 'OpenSans Italic', sans-serif;
         font-size: 24px;
+        float: right;
+        margin-top: -20px;
+        margin-right: 40px;
+    }
+
+    .wpcf7-form-control-wrap.home_square {
+        display: block;
+        width: 220px;
     }
 
 
@@ -166,6 +176,7 @@ section.calculator-block {
         border: none;
         color: $base-font-color;
         font-size: 14px;
+        margin-top: -20px;
 
         &:active,
         &:focus,
@@ -176,10 +187,15 @@ section.calculator-block {
         }
     }
 
-    input.btn__send-form--white-arrow[type="submit"] {
+    input.btn__send-form--white-arrow[type="submit"],
+    input[type="submit"]{
         margin-top: 8px;
+        text-transform: uppercase;
         width: 327px;
         float: right;
+        -webkit-border-radius: 46px;
+        -moz-border-radius: 46px;
+        border-radius: 46px;
         @include background( url('images/icons/form__arrow--white.png') 228px 20px no-repeat,
                 linear-gradient(to right, #b9df52, #6ba942) );
         @include padding( 26px 72px 26px 78px );
