@@ -22,7 +22,7 @@
 
 .btn__know-more,
 form input.btn__know-more[type="submit"]{
-    @include padding( 18px 26px );
+    @include padding( 14px 20px );
     color: #fff;
     font-family: 'OpenSans Semibold', sans-serif;
     background-color: $sub-purple;
@@ -32,8 +32,8 @@ form input.btn__know-more[type="submit"]{
     border: 2px solid #fff;
     display: inline-block;
     text-decoration: none;
-    font-size: 18px;
-    line-height: 18px;
+    font-size: 14px;
+    line-height: 14px;
     text-transform: uppercase;
     
     &:hover {
@@ -44,12 +44,12 @@ form input.btn__know-more[type="submit"]{
 
 .btn__send-form--white-arrow,
 form input.btn__send-form--white-arrow[type="submit"] {
-    @include background( url('images/icons/form__arrow--white.png') 272px 20px no-repeat, linear-gradient(to right, #b9df52, #6ba942) );
-    @include padding( 26px 72px 26px 62px );
+    @include background( url('images/icons/form__arrow--white.png') 172px center no-repeat, linear-gradient(to right, #b9df52, #6ba942) );
+    @include padding( 14px 50px 14px 20px );
     text-align: left;
     text-transform: uppercase;
     color: #fff;
-    font-size: 18px;
+    font-size: 14px;
     font-family: 'OpenSans Semibold', sans-serif;
     width: 100%;
     -webkit-border-radius: 46px;
@@ -59,7 +59,7 @@ form input.btn__send-form--white-arrow[type="submit"] {
     &:hover {
         box-shadow: none;
         outline: none;
-        @include background( url('images/icons/form__arrow--white.png') 272px 20px no-repeat,
+        @include background( url('images/icons/form__arrow--white.png') 172px center no-repeat,
                 linear-gradient(to right, darken( #b9df52, 10%) , darken( #6ba942, 10%) ) );
     }
 }

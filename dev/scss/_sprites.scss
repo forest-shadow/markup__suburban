@@ -1,16 +1,14 @@
-/*
-SCSS variables are information about icon's compiled state, stored under its original file name
-
-.icon-home {
-  width: $icon-home-width;
-}
-
-The large array-like variables contain all information about a single icon
-$icon-home: x y offset_x offset_y width height total_width total_height image_path;
-
-At the bottom of this section, we provide information about the spritesheet itself
-$spritesheet: width height image $spritesheet-sprites;
-*/
+// SCSS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home {
+//   width: $icon-home-width;
+// }
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path;
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites;
 $s-balloon-name: 's-balloon';
 $s-balloon-x: 69px;
 $s-balloon-y: 340px;
@@ -100,16 +98,16 @@ $s-carousel-projects-loupe-total-height: 438px;
 $s-carousel-projects-loupe-image: 'images/sprite.png';
 $s-carousel-projects-loupe: (340px, 170px, -340px, -170px, 72px, 72px, 500px, 438px, 'images/sprite.png', 's-carousel-projects__loupe', );
 $s-form-blocks-name-name: 's-form-blocks__name';
-$s-form-blocks-name-x: 393px;
+$s-form-blocks-name-x: 344px;
 $s-form-blocks-name-y: 340px;
-$s-form-blocks-name-offset-x: -393px;
+$s-form-blocks-name-offset-x: -344px;
 $s-form-blocks-name-offset-y: -340px;
 $s-form-blocks-name-width: 32px;
 $s-form-blocks-name-height: 25px;
 $s-form-blocks-name-total-width: 500px;
 $s-form-blocks-name-total-height: 438px;
 $s-form-blocks-name-image: 'images/sprite.png';
-$s-form-blocks-name: (393px, 340px, -393px, -340px, 32px, 25px, 500px, 438px, 'images/sprite.png', 's-form-blocks__name', );
+$s-form-blocks-name: (344px, 340px, -344px, -340px, 32px, 25px, 500px, 438px, 'images/sprite.png', 's-form-blocks__name', );
 $s-form-blocks-phone-name: 's-form-blocks__phone';
 $s-form-blocks-phone-x: 478px;
 $s-form-blocks-phone-y: 252px;
@@ -122,27 +120,27 @@ $s-form-blocks-phone-total-height: 438px;
 $s-form-blocks-phone-image: 'images/sprite.png';
 $s-form-blocks-phone: (478px, 252px, -478px, -252px, 20px, 33px, 500px, 438px, 'images/sprite.png', 's-form-blocks__phone', );
 $s-form-footer-email-name: 's-form-footer__email';
-$s-form-footer-email-x: 102px;
-$s-form-footer-email-y: 409px;
-$s-form-footer-email-offset-x: -102px;
-$s-form-footer-email-offset-y: -409px;
+$s-form-footer-email-x: 473px;
+$s-form-footer-email-y: 340px;
+$s-form-footer-email-offset-x: -473px;
+$s-form-footer-email-offset-y: -340px;
 $s-form-footer-email-width: 18px;
 $s-form-footer-email-height: 12px;
 $s-form-footer-email-total-width: 500px;
 $s-form-footer-email-total-height: 438px;
 $s-form-footer-email-image: 'images/sprite.png';
-$s-form-footer-email: (102px, 409px, -102px, -409px, 18px, 12px, 500px, 438px, 'images/sprite.png', 's-form-footer__email', );
+$s-form-footer-email: (473px, 340px, -473px, -340px, 18px, 12px, 500px, 438px, 'images/sprite.png', 's-form-footer__email', );
 $s-form-footer-message-name: 's-form-footer__message';
-$s-form-footer-message-x: 74px;
-$s-form-footer-message-y: 409px;
-$s-form-footer-message-offset-x: -74px;
-$s-form-footer-message-offset-y: -409px;
+$s-form-footer-message-x: 445px;
+$s-form-footer-message-y: 340px;
+$s-form-footer-message-offset-x: -445px;
+$s-form-footer-message-offset-y: -340px;
 $s-form-footer-message-width: 18px;
 $s-form-footer-message-height: 17px;
 $s-form-footer-message-total-width: 500px;
 $s-form-footer-message-total-height: 438px;
 $s-form-footer-message-image: 'images/sprite.png';
-$s-form-footer-message: (74px, 409px, -74px, -409px, 18px, 17px, 500px, 438px, 'images/sprite.png', 's-form-footer__message', );
+$s-form-footer-message: (445px, 340px, -445px, -340px, 18px, 17px, 500px, 438px, 'images/sprite.png', 's-form-footer__message', );
 $s-form-footer-name-name: 's-form-footer__name';
 $s-form-footer-name-x: 478px;
 $s-form-footer-name-y: 295px;
@@ -155,16 +153,16 @@ $s-form-footer-name-total-height: 438px;
 $s-form-footer-name-image: 'images/sprite.png';
 $s-form-footer-name: (478px, 295px, -478px, -295px, 15px, 15px, 500px, 438px, 'images/sprite.png', 's-form-footer__name', );
 $s-form-footer-phone-name: 's-form-footer__phone';
-$s-form-footer-phone-x: 464px;
+$s-form-footer-phone-x: 386px;
 $s-form-footer-phone-y: 340px;
-$s-form-footer-phone-offset-x: -464px;
+$s-form-footer-phone-offset-x: -386px;
 $s-form-footer-phone-offset-y: -340px;
 $s-form-footer-phone-width: 19px;
 $s-form-footer-phone-height: 20px;
 $s-form-footer-phone-total-width: 500px;
 $s-form-footer-phone-total-height: 438px;
 $s-form-footer-phone-image: 'images/sprite.png';
-$s-form-footer-phone: (464px, 340px, -464px, -340px, 19px, 20px, 500px, 438px, 'images/sprite.png', 's-form-footer__phone', );
+$s-form-footer-phone: (386px, 340px, -386px, -340px, 19px, 20px, 500px, 438px, 'images/sprite.png', 's-form-footer__phone', );
 $s-form-arrow-green-name: 's-form__arrow--green';
 $s-form-arrow-green-x: 0px;
 $s-form-arrow-green-y: 409px;
@@ -188,27 +186,27 @@ $s-form-arrow-white-total-height: 438px;
 $s-form-arrow-white-image: 'images/sprite.png';
 $s-form-arrow-white: (37px, 409px, -37px, -409px, 27px, 29px, 500px, 438px, 'images/sprite.png', 's-form__arrow--white', );
 $s-header-call-name: 's-header__call';
-$s-header-call-x: 223px;
+$s-header-call-x: 415px;
 $s-header-call-y: 340px;
-$s-header-call-offset-x: -223px;
+$s-header-call-offset-x: -415px;
 $s-header-call-offset-y: -340px;
-$s-header-call-width: 39px;
-$s-header-call-height: 39px;
+$s-header-call-width: 20px;
+$s-header-call-height: 19px;
 $s-header-call-total-width: 500px;
 $s-header-call-total-height: 438px;
 $s-header-call-image: 'images/sprite.png';
-$s-header-call: (223px, 340px, -223px, -340px, 39px, 39px, 500px, 438px, 'images/sprite.png', 's-header__call', );
+$s-header-call: (415px, 340px, -415px, -340px, 20px, 19px, 500px, 438px, 'images/sprite.png', 's-header__call', );
 $s-info-name: 's-info';
-$s-info-x: 272px;
+$s-info-x: 223px;
 $s-info-y: 340px;
-$s-info-offset-x: -272px;
+$s-info-offset-x: -223px;
 $s-info-offset-y: -340px;
 $s-info-width: 31px;
 $s-info-height: 32px;
 $s-info-total-width: 500px;
 $s-info-total-height: 438px;
 $s-info-image: 'images/sprite.png';
-$s-info: (272px, 340px, -272px, -340px, 31px, 32px, 500px, 438px, 'images/sprite.png', 's-info', );
+$s-info: (223px, 340px, -223px, -340px, 31px, 32px, 500px, 438px, 'images/sprite.png', 's-info', );
 $s-popup-close-name: 's-popup__close';
 $s-popup-close-x: 173px;
 $s-popup-close-y: 340px;
@@ -221,38 +219,38 @@ $s-popup-close-total-height: 438px;
 $s-popup-close-image: 'images/sprite.png';
 $s-popup-close: (173px, 340px, -173px, -340px, 40px, 40px, 500px, 438px, 'images/sprite.png', 's-popup__close', );
 $s-popup-feedback-call-name: 's-popup__feedback-call';
-$s-popup-feedback-call-x: 435px;
-$s-popup-feedback-call-y: 340px;
-$s-popup-feedback-call-offset-x: -435px;
-$s-popup-feedback-call-offset-y: -340px;
+$s-popup-feedback-call-x: 74px;
+$s-popup-feedback-call-y: 409px;
+$s-popup-feedback-call-offset-x: -74px;
+$s-popup-feedback-call-offset-y: -409px;
 $s-popup-feedback-call-width: 19px;
 $s-popup-feedback-call-height: 20px;
 $s-popup-feedback-call-total-width: 500px;
 $s-popup-feedback-call-total-height: 438px;
 $s-popup-feedback-call-image: 'images/sprite.png';
-$s-popup-feedback-call: (435px, 340px, -435px, -340px, 19px, 20px, 500px, 438px, 'images/sprite.png', 's-popup__feedback-call', );
+$s-popup-feedback-call: (74px, 409px, -74px, -409px, 19px, 20px, 500px, 438px, 'images/sprite.png', 's-popup__feedback-call', );
 $s-radio-checked-name: 's-radio--checked';
-$s-radio-checked-x: 313px;
+$s-radio-checked-x: 264px;
 $s-radio-checked-y: 340px;
-$s-radio-checked-offset-x: -313px;
+$s-radio-checked-offset-x: -264px;
 $s-radio-checked-offset-y: -340px;
 $s-radio-checked-width: 30px;
 $s-radio-checked-height: 30px;
 $s-radio-checked-total-width: 500px;
 $s-radio-checked-total-height: 438px;
 $s-radio-checked-image: 'images/sprite.png';
-$s-radio-checked: (313px, 340px, -313px, -340px, 30px, 30px, 500px, 438px, 'images/sprite.png', 's-radio--checked', );
+$s-radio-checked: (264px, 340px, -264px, -340px, 30px, 30px, 500px, 438px, 'images/sprite.png', 's-radio--checked', );
 $s-radio-name: 's-radio';
-$s-radio-x: 353px;
+$s-radio-x: 304px;
 $s-radio-y: 340px;
-$s-radio-offset-x: -353px;
+$s-radio-offset-x: -304px;
 $s-radio-offset-y: -340px;
 $s-radio-width: 30px;
 $s-radio-height: 30px;
 $s-radio-total-width: 500px;
 $s-radio-total-height: 438px;
 $s-radio-image: 'images/sprite.png';
-$s-radio: (353px, 340px, -353px, -340px, 30px, 30px, 500px, 438px, 'images/sprite.png', 's-radio', );
+$s-radio: (304px, 340px, -304px, -340px, 30px, 30px, 500px, 438px, 'images/sprite.png', 's-radio', );
 $s-slider-next-purple-name: 's-slider__next--purple';
 $s-slider-next-purple-x: 0px;
 $s-slider-next-purple-y: 340px;
@@ -303,32 +301,30 @@ $spritesheet-image: 'images/sprite.png';
 $spritesheet-sprites: ($s-balloon, $s-benefit-deadlines, $s-benefit-fixed-price, $s-benefit-guarantee, $s-benefit-installment, $s-benefit-years-of-success, $s-calculator, $s-carousel-projects-loupe, $s-form-blocks-name, $s-form-blocks-phone, $s-form-footer-email, $s-form-footer-message, $s-form-footer-name, $s-form-footer-phone, $s-form-arrow-green, $s-form-arrow-white, $s-header-call, $s-info, $s-popup-close, $s-popup-feedback-call, $s-radio-checked, $s-radio, $s-slider-next-purple, $s-slider-next-white, $s-slider-prev-purple, $s-slider-prev-white, );
 $spritesheet: (500px, 438px, 'images/sprite.png', $spritesheet-sprites, );
 
-/*
-The provided mixins are intended to be used with the array-like variables
-
-.icon-home {
-  @include sprite-width($icon-home);
-}
-
-.icon-email {
-  @include sprite($icon-email);
-}
-
-Example usage in HTML:
-
-`display: block` sprite:
-<div class="icon-home"></div>
-
-To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
-
-// CSS
-.icon {
-  display: inline-block;
-}
-
-// HTML
-<i class="icon icon-home"></i>
-*/
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home {
+//   @include sprite-width($icon-home);
+// }
+//
+// .icon-email {
+//   @include sprite($icon-email);
+// }
+//
+// Example usage in HTML:
+//
+// `display: block` sprite:
+// <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//
+// // CSS
+// .icon {
+//   display: inline-block;
+// }
+//
+// // HTML
+// <i class="icon icon-home"></i>
 @mixin sprite-width($sprite) {
   width: nth($sprite, 5);
 }
@@ -355,12 +351,10 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
   @include sprite-height($sprite);
 }
 
-/*
-The `sprites` mixin generates identical output to the CSS template
-  but can be overridden inside of SCSS
-
-@include sprites($spritesheet-sprites);
-*/
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SCSS
+//
+// @include sprites($spritesheet-sprites);
 @mixin sprites($sprites) {
   @each $sprite in $sprites {
     $sprite-name: nth($sprite, 10);

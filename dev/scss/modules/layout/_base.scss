@@ -20,6 +20,10 @@ body {
     @include padding ( 0 50px );
     margin: 0 auto;
     position: relative;
+
+    &--no-paddings {
+        padding: 0;
+    }
 }
 
 /*********************************************
@@ -27,7 +31,7 @@ body {
  *********************************************/
 section.breadcrumbs-block {
     min-width: 1280px;
-    margin-top: 131px;
+    margin-top: 159px;
     background: #eff0f4;
     @include padding( 15px null );
     

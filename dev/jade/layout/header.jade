@@ -1,13 +1,16 @@
 header.site-header
     .site-wrapper
-        nav.site-header__navigation
-            ul
-                +navListItem( "Главная" )
-                +navListItem( "Строительство" )
-                +navListItem( "Проекты" )
-                +navListItem( "Калькулятор" )
-                +navListItem( "Контакты" )
+        .site-header-container
+            a.site-logo(href="#")
+                img(src="images/site-logo.png")
+            nav.site-header__navigation
+                ul
+                    +navListItem( "Главная" )
+                    +navListItem( "Строительство" )
+                    +navListItem( "Проекты" )
+                    +navListItem( "Калькулятор" )
+                    +navListItem( "Контакты" )
 
-        .site-header__feedback-call
-            a.btn__rounded-dark-green.feedback-call-popup(href="#feedback-call-popup") Заказать звонок
-            span.feedback-call__working-schedule Режим работы: с 10.00 до 19.00
+            .site-header__feedback-call
+                a.btn__rounded-dark-green.feedback-call-popup(href="#feedback-call-popup") Заказать звонок
+                span.feedback-call__working-schedule Режим работы: с 10.00 до 19.00

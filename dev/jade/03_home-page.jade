@@ -10,8 +10,9 @@ append config
     - var PageTitle         = PageTitle.concat(' | ' + thisPage)
     
 block content
-    .mainpage-slider__container
-        .site-wrapper
+
+    .site-wrapper.site-wrapper--no-paddings
+        .mainpage-slider__container
             .mainpage-slider__special-offer-block
                 span.offer-date с 1 до 31 авгуcта
                 h3 Специальное предложение
@@ -25,36 +26,31 @@ block content
                         input#phone(type="text", name="phone")
                     input.btn__send-form--white-arrow(type="submit", value="Получить скидку")
 
-        section.mainpage-slider
-            .mainpage-slider__slide(style="background: url('images/mainslider__slide-01.jpg') center center no-repeat;")
-                .site-wrapper
+            section.mainpage-slider
+                .mainpage-slider__slide(style="background: url('images/mainslider-new__slide-01.jpg') center center no-repeat;")
                     .slide-desc
-                        .slide-desc__text Время <big>менять вид</big><br> <span class="middle">из окна</span>
+                        .slide-desc__text Время менять вид из окна
                         a.btn__know-more(href="#") Узнать подробнее
 
-            .mainpage-slider__slide(style="background: url('images/mainslider__slide-02.jpg') center center no-repeat;")
-                .site-wrapper
+                .mainpage-slider__slide(style="background: url('images/mainslider-new__slide-01.jpg') center center no-repeat;")
                     .slide-desc
-                        .slide-desc__text Время <big>менять вид</big> <span class="middle">из окна</span>
+                        .slide-desc__text Время менять вид из окна
                         a.btn__know-more(href="#") Узнать подробнее
 
-            .mainpage-slider__slide(style="background: url('images/mainslider__slide-03.jpg') center center no-repeat;")
-                .site-wrapper
+                .mainpage-slider__slide(style="background: url('images/mainslider-new__slide-01.jpg') center center no-repeat;")
                     .slide-desc
-                        .slide-desc__text Время <big>менять вид</big> <span class="middle">из окна</span>
+                        .slide-desc__text Время менять вид из окна
                         a.btn__know-more(href="#") Узнать подробнее
 
-            .mainpage-slider__slide(style="background: url('images/mainslider__slide-04.jpg') center center no-repeat;")
-                .site-wrapper
-                    .slide-desc
-                        .slide-desc__text Время <big>менять вид</big> <span class="middle">из окна</span>
-                        a.btn__know-more(href="#") Узнать подробнее
+        section.suburban-building-block
+            .suburban-building-block__suburban-heading
+                h2.suburban-heading__title Строительство загородных домов
 
-            .mainpage-slider__slide(style="background: url('images/mainslider__slide-05.jpg') center center no-repeat;")
-                .site-wrapper
-                    .slide-desc
-                        .slide-desc__text Время <big>менять вид</big> <span class="middle">из окна</span>
-                        a.btn__know-more(href="#") Узнать подробнее
+            .suburban-building-block__suburban-desc(style="background: url( 'images/bg__suburban-building.jpg' ) center center no-repeat;")
+                .suburban-desc__text
+                    p Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас! Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас! Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас! Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас!Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас! Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас!
+                a.suburban-desc__knew-more-link( href="#" ) Читать подробнее
+
 
     .site-wrapper
         section.about-us
@@ -83,14 +79,7 @@ block content
                         input#phone(type="text", name="phone", placeholder="Ваш телефон")
                     input.btn__know-more(type="submit", value="Узнать подробнее")
 
-    section.suburban-building-block
-        .suburban-building-block__suburban-heading
-            h2.suburban-heading__title Строительство <big>загородных</big> <span class="middle">домов</span>
 
-        .suburban-building-block__suburban-desc(style="background: url( 'images/bg__suburban-building.jpg' ) center center no-repeat;")
-            .suburban-desc__text
-                p Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас! Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас! Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас! Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас!Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас! Хотите жить в доме Вашей мечты? Мы готовы построить его для Вас!
-            a.suburban-desc__knew-more-link( href="#" ) Читать подробнее
 
     .site-wrapper
         section.projects-carousel-block

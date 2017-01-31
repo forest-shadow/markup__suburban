@@ -7,7 +7,7 @@
 .mainpage-slider__container {
     width: 100%;
     min-width: 1280px;
-    margin-top: 131px;
+    margin-top: 122px;
     position: relative;
 
     .slick-dotted.slick-slider {
@@ -17,38 +17,45 @@
     .mainpage-slider {
         min-width: 100%;
         .mainpage-slider__slide {
-            @include size( 100% 600px );
+            @include size( 100% 400px );
         }
 
         .slide-desc {
             margin-top: 50px;
+            margin-left: 53px;
             width: 530px;
             color: #fff;
             text-transform: uppercase;
             line-height: 82px;
 
-            .btn__know-more {
-                margin-left: 75px;
-            }
+            //.btn__know-more {
+            //    margin-left: 75px;
+            //}
         }
 
         .slide-desc__text {
             font-family: 'OpenSans Bold', sans-serif;
             font-size: 48px;
-            margin-bottom: 40px;
-            border-left: 16px solid #fff;
-            padding-left: 56px;
+            margin-bottom: 25px;
+            line-height: 50px;
+            @include padding ( 10px 0 10px 13px );
+            @include background-opacity( $sub-salad-green, 0.8 );
+            //border-left: 16px solid #fff;
+            //padding-left: 56px;
 
-            big {
-                font-family: 'OpenSans ExtraBold', sans-serif;
-                font-size: 105px;
-            }
+            //big {
+            //    font-family: 'OpenSans ExtraBold', sans-serif;
+            //    font-size: 105px;
+            //}
         }
 
+        .btn__know-more {
+            vertical-align: top;
+        }
 
         .slick-dots {
             @include position( absolute, null 0 25px);
-            margin-left: -440px;
+            margin-left: -522px;
 
             button::before {
                 content: '';
@@ -77,8 +84,8 @@
  * 01.01. Main Page Slider form styles
  *********************************************/
 .mainpage-slider__special-offer-block {
-    @include position( absolute, 50px 74px null null );
-    @include padding( 30px 19px 33px );
+    @include position( absolute, 50px 50px null null );
+    @include padding( 20px 19px 23px );
     z-index: 10;
     width: 388px;
     background: #fff;
@@ -90,19 +97,20 @@
         text-transform: uppercase;
         font-family: 'OpenSans Bold', sans-serif;
         color: $sub-dark-green;
-        margin-bottom: 14px;
+        margin-bottom: 8px;
         display: inline-block;
     }
 
     h3 {
         text-transform: uppercase;
-        font-size: 22px;
-        margin-bottom: 14px;
+        font-size: 18px;
+        margin-bottom: 0;
+        line-height: 16px;
     }
 
     span.offer-desc {
-        font-size: 16px;
-        margin-bottom: 40px;
+        font-size: 12px;
+        margin-bottom: 20px;
         display: inline-block;
     }
 
@@ -121,7 +129,7 @@
         }
 
         input {
-            @include padding ( 14px 20px );
+            @include padding ( 10px 20px );
             -webkit-border-radius: 46px;
             -moz-border-radius: 46px;
             border-radius: 46px;
@@ -140,8 +148,11 @@
             }
         }
 
-        .btn__send-form--white-arrow {
-            margin-top: 20px;
+        input[type="submit"].btn__send-form--white-arrow {
+            width: 212px;
+            text-align: center;
+            display: block;
+            margin: 20px auto 0;
         }
 
     }
@@ -286,19 +297,19 @@
     @include align-items(stretch);
     @include flex-direction(row);
     @include justify-content(flex-start);
-    @include size( 100% 350px );
+    @include size( 100% 270px );
     min-width: 1280px;
 
     .suburban-building-block__suburban-heading {
-        @include padding( 62px 42px null );
-        width: 40%;
+        @include padding( 40px 42px );
+        width: 424px;
         background: $sub-salad-green;
 
         h2.suburban-heading__title {
             border-left: 14px solid #fff;
             padding-left: 35px;
             font-family: 'OpenSans Bold', sans-serif;
-            font-size: 36px;
+            font-size: 30px;
             color: #fff;
             text-transform: uppercase;
 
@@ -318,7 +329,7 @@
         @include padding( 77px 30px null );
         -webkit-background-size: cover;
         background-size: cover!important;
-        width: 60%;
+        width: 856px;
 
         .suburban-desc__text {
             color: #fff;
